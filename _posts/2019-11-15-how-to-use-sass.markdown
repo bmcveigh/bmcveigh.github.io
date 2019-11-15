@@ -2,15 +2,16 @@
 layout: post
 title:  "How to: Configure your project to use Sass"
 date:   2019-11-15 11:55:59 -0500
-categories: jekyll update
+categories: tutorials sass
 ---
-Sass (short for Syntactically Awesome Stylesheets) is a great tool for front-end development, especially when you notice the drawbacks of CSS, particularly with selectors and duplicate styles. In this article, I will show you how to configure your project to use Sass.
+[Sass](https://sass-lang.com/) (short for Syntactically Awesome Stylesheets) is a great tool for front-end development, especially when you notice the drawbacks of CSS, particularly with selectors and duplicate styles. In this article, I will show you how to configure your project to use Sass.
 
 To compile and use Sass, you will need to make sure you have the following tools installed, which I will discuss later in this tutorial:
 
-NodeJS (for running npm, gulp tasks, and dependencies) installed on your system.
-npm (this is part of NodeJS, but you may need to install it independently use it if you’re installing it on Linux)
-GulpJS (used to run tasks like compiling Sass and JavaScript)
+* [NodeJS](https://nodejs.org/en/) (for running npm, gulp tasks, and dependencies) installed on your system.
+* [npm](https://www.npmjs.com/) (this is part of NodeJS, but you may need to install it independently use it if you’re installing it on Linux)
+* [GulpJS](https://gulpjs.com/) (used to run tasks like compiling Sass and JavaScript)
+
 If you are using Windows, I recommend installing this in Ubuntu LTS from the Microsoft Store. It’s not required to run everything, but if you like the Linux CLI better, I highly recommend installing this. If you do decide to install it, make sure you download the latest version as a prerequisite.
 
 ### Step 1: Install NodeJS and npm

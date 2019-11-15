@@ -4,15 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I am a Web Developer specializing in Drupal 7/8 and JavaScript (including React, Angular, and jQuery). I am an active member of the Drupal community (here is a link to my profile: [https://www.drupal.org/u/bribread22](https://www.drupal.org/u/bribread22)) and am passionate about writing contrib projects including modules, distributions, and themes (including working with Sass and CSS). I have two Acquia certifications; I am an Acquia Certified Developer and an Acquia Certified Back End Specialist, both in Drupal 8. I am passionate about open source technologies and enjoy exploring new languages and frameworks to expand my technical skillset.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+[GitHub Profile](https://github.com/bmcveigh)
