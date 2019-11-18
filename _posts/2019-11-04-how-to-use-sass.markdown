@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "How to: Configure your project to use Sass"
-date:   2019-11-15 11:55:59 -0500
+title:  "How to: Configure Your Project to use Sass"
+date:   2019-11-04 21:51:00 -0500
 categories: tutorials sass
 ---
 [Sass](https://sass-lang.com/) (short for Syntactically Awesome Stylesheets) is a great tool for front-end development, especially when you notice the drawbacks of CSS, particularly with selectors and duplicate styles. In this article, I will show you how to configure your project to use Sass.
