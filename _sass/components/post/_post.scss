@@ -4,6 +4,11 @@
 .posts {
     padding-top: 0;
 
+    .post-title {
+        color:rgb(17, 17, 17);
+        font-size:49.5px;
+    }
+
     & > .post {
         padding: 20px 0;
     }
