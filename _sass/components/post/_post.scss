@@ -1,0 +1,10 @@
+//
+// Styling for posts.
+//
+.posts {
+    padding-top: 0;
+
+    & > .post {
+        padding: 20px 0;
+    }
+}

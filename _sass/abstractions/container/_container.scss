@@ -1,0 +1,15 @@
+.container {
+
+    @media screen and (min-width: 800px) {
+        #content {
+            position: relative;
+            left: 20%;
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    
+}

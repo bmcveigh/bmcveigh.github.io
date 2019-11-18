@@ -22,7 +22,7 @@ title: Brian McVeigh's Blog
 email: bcmcveigh@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Yet another blog site...
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: bribread22
 github_username:  bmcveigh
@@ -33,7 +33,7 @@ custom_config:
     post_index_message: Click on a post to start reading about it...
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
@@ -58,3 +58,11 @@ plugins:
 #   - vendor/ruby/
 
 excerpt_separator: <!--more-->
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            compressed
+css_dir: css
