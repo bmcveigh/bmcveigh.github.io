@@ -27,6 +27,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: bribread22
 github_username:  bmcveigh
 
+# Custom configuration.
+custom_config:
+  messages:
+    post_index_message: Click on a post to start reading about it...
+
 # Build settings
 theme: minima
 plugins:
