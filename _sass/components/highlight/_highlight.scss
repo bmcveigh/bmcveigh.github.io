@@ -4,7 +4,24 @@
 
 .highlight {
     pre {
-        font-family: operator mono ssm a,operator mono ssm b,operator mono,source code pro,Menlo,Consolas,Monaco,monospace; 
+        font-family: operator mono ssm a,operator mono ssm b,operator mono,source code pro,Menlo,Consolas,Monaco,monospace;
+
+        code {
+            font-size: 16px;
+
+            // Label for the code block.
+            &::before {
+                color: #ff8a00;
+                font-family: Rubik,Lato,lucida grande,lucida sans unicode,Tahoma,Sans-Serif;
+                margin-left: -10px;
+                text-transform: uppercase;
+                display: block;
+                padding-bottom: 20px;
+                font-weight: 700;
+                font-size: 12px;
+                content: attr(data-lang);
+            }
+        }
     }
 
     *::selection {
