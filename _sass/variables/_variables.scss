@@ -1,0 +1,19 @@
+//
+// Contains Global Sass variables used for the blog.
+//
+
+$brand-color:           #828282 !default;
+$brand-color-light:     lighten($brand-color, 40%) !default;
+$brand-color-dark:      darken($brand-color, 25%) !default;
+
+$text-color:            #111 !default;
+
+$spacing-unit:          30px !default;
+
+// Variables for tables.
+$table-text-color:      lighten($text-color, 18%) !default;
+$table-zebra-color:     lighten($brand-color, 46%) !default;
+$table-header-bg-color: lighten($brand-color, 43%) !default;
+$table-header-border:   lighten($brand-color, 36%) !default;
+$table-border-color:    $brand-color-light !default;
+$table-text-align: left !default;
