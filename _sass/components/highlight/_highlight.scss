@@ -1,0 +1,62 @@
+//
+// Styling for syntax highlighting on code blocks.
+//
+
+.highlight {
+    background: #333;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #fff;
+    overflow-y: auto;
+
+    // Strings
+    .dl, .s1 {
+        color: lightgreen;
+    }
+
+    // var, function, public function
+    .kd, .k {
+        color: magenta;
+    }
+
+    // Comments
+    .c1 {
+        color: #d0d0d0;
+    }
+
+    // Functions
+    .nf {
+        color: cyan;
+        font-style: italic;
+    }
+
+    // New variables.
+    .nv {
+        color: lightblue;
+    }
+
+    // Specific highlighting for yaml.
+    .language-yaml {
+        .s1, .s {
+            color: lightgreen;
+        }
+
+        .na, .pi {
+            color: orange;
+        }
+    }
+
+    // Specific highlighting for PHP.
+    .language-php {
+        // PHP opening tag
+        .cp {
+            color: cyan;
+            font-style: italic;
+        }
+
+        // Namespaces
+        .kn {
+            color: magenta;
+        }
+    }
+}
