@@ -3,30 +3,41 @@
 //
 
 .highlight {
-    background: #333;
+    pre {
+        font-family: operator mono ssm a,operator mono ssm b,operator mono,source code pro,Menlo,Consolas,Monaco,monospace; 
+    }
+
+    *::selection {
+        background: $highlight-code-color;
+    }
+    *::-moz-selection {
+        background: $highlight-code-color;
+    }
+
+    background: $highlight-bg-color;
     border-radius: 8px;
     padding: 10px 20px;
-    color: #fff;
+    color: $highlight-text-color;
     overflow-y: auto;
 
     // Strings
     .dl, .s1 {
-        color: lightgreen;
+        color: $highlight-string-color;
     }
 
     // var, function, public function
     .kd, .k {
-        color: magenta;
+        color: $highlight-keyword-color;
     }
 
     // Comments
     .c1 {
-        color: #d0d0d0;
+        color: $highlight-comments-color;
     }
 
     // Functions
     .nf {
-        color: cyan;
+        color: $highlight-functions-color;
         font-style: italic;
     }
 
@@ -50,13 +61,13 @@
     .language-php {
         // PHP opening tag
         .cp {
-            color: cyan;
+            color: $highlight-variables-color;
             font-style: italic;
         }
 
         // Namespaces
         .kn {
-            color: magenta;
+            color: $highlight-keyword-color;
         }
     }
 }
