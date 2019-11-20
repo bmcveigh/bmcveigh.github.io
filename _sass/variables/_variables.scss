@@ -20,6 +20,7 @@ $table-text-align: left !default;
 
 // Generic colors.
 $color-white: #fff;
+$color-orange: #ff8a00;
 
 // Syntax highlight colors.
 $highlight-code-color: #9c27b0;
@@ -33,3 +34,6 @@ $highlight-variables-color: lightblue;
 
 // Footer colors.
 $footer-bg-color: $highlight-bg-color;
+
+// Font family variables
+$font-family-rubik: Rubik,Lato,lucida grande,lucida sans unicode,Tahoma,Sans-Serif;

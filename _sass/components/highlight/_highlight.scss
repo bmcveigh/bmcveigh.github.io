@@ -19,8 +19,8 @@
 
             // Label for the code block.
             &::before {
-                color: #ff8a00;
-                font-family: Rubik,Lato,lucida grande,lucida sans unicode,Tahoma,Sans-Serif;
+                color: $color-orange;
+                font-family: $font-family-rubik;
                 margin-left: -10px;
                 text-transform: uppercase;
                 display: block;
