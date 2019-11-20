@@ -21,6 +21,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /**
+ * Unordered lists
+ */
+ul {
+    list-style: none;
+
+    > li:before {
+        content: "\2666";
+        color: $color-red;
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+}
+
+/**
  * Tables
  */
  table {
