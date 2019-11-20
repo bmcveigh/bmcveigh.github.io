@@ -49,7 +49,12 @@
         color: $highlight-keyword-color;
     }
 
-    // Comments
+    // Docblock comments.
+    .cd {
+        color: $highlight-string-color;
+    }
+
+    // Single line comments
     .c1 {
         color: $highlight-comments-color;
     }
