@@ -13,3 +13,19 @@
     }
     
 }
+
+.layout-page {
+    
+    .container {
+        #content {
+            max-width: 100%;
+            margin: 120px 0 0 0;
+            padding: 0 80px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
