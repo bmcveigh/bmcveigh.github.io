@@ -11,8 +11,21 @@
     margin-inline-start: 0;
     margin-inline-end: 0;
 
+    table {
+        border: 0;
+
+        .gutter {
+            width: 10px;
+        }
+
+        tr, td {
+            border: 0;
+        }
+    }
+
     pre {
         font-family: operator mono ssm a,operator mono ssm b,operator mono,source code pro,Menlo,Consolas,Monaco,monospace;
+        color: $color-white;
 
         code {
             font-size: 16px;
