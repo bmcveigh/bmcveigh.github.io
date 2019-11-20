@@ -3,6 +3,14 @@
 //
 
 .highlight {
+    background: $highlight-bg-color;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: $highlight-text-color;
+    overflow-y: auto;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+
     pre {
         font-family: operator mono ssm a,operator mono ssm b,operator mono,source code pro,Menlo,Consolas,Monaco,monospace;
 
@@ -30,12 +38,6 @@
     *::-moz-selection {
         background: $highlight-code-color;
     }
-
-    background: $highlight-bg-color;
-    border-radius: 8px;
-    padding: 10px 20px;
-    color: $highlight-text-color;
-    overflow-y: auto;
 
     // Strings
     .dl, .s1 {
