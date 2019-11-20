@@ -20,10 +20,11 @@
     .main-menu-list {
         position: absolute;
         bottom: 0;
-        right: 25%;
+        right: 20%;
 
         > li {
             display: inline;
+            margin-right: 20px;
 
             &::before {
                 content: '';
