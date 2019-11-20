@@ -16,4 +16,23 @@
     a {
         color: #fff;
     }
+
+    .main-menu-list {
+        position: absolute;
+        bottom: 0;
+        right: 25%;
+
+        > li {
+            display: inline;
+
+            &::before {
+                content: '';
+            }
+
+            a {
+                @include font-orange-uppercase();
+            }
+        }
+    }
+    
 }

@@ -1,0 +1,8 @@
+docs_list_title: Main Menu
+docs:
+
+- title: Home
+  url: /
+
+- title: About
+  url: /about/
