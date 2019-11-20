@@ -18,6 +18,9 @@ $table-header-border:   lighten($brand-color, 36%) !default;
 $table-border-color:    $brand-color-light !default;
 $table-text-align: left !default;
 
+// Generic colors.
+$color-white: #fff;
+
 // Syntax highlight colors.
 $highlight-code-color: #9c27b0;
 $highlight-bg-color: #001628;
@@ -27,3 +30,6 @@ $highlight-keyword-color: magenta;
 $highlight-comments-color: #d0d0d0;
 $highlight-functions-color: cyan;
 $highlight-variables-color: lightblue;
+
+// Footer colors.
+$footer-bg-color: $highlight-bg-color;
