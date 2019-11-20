@@ -1,0 +1,19 @@
+//
+// Styling for the header, which includes the navbar.
+//
+
+.masthead {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    top: 0;
+    left: 0;
+    padding-left: 40px;
+    width: 100%;
+    z-index: 100;
+
+    a {
+        color: #fff;
+    }
+}
