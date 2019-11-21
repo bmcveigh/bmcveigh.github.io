@@ -108,3 +108,11 @@
         }
     }
 }
+
+// Single line syntax highlighting (e.g. `foo`)
+.highlighter-rouge {
+    background: $highlight-bg-color;
+    border-radius: 8px;
+    padding: 1px 9px;
+    color: $highlight-text-color;
+}
