@@ -17,9 +17,9 @@ body {
     font-size: 1.5em;
 }
 
-@mixin font-orange-uppercase($font-size: 18px) {
+@mixin font-uppercase($font-size: 18px, $font-color: $color-orange) {
     font-family: $font-family-rubik;
-    color: $color-orange;
+    color: $font-color;
     text-transform: uppercase;
     font-size: $font-size;
 }
