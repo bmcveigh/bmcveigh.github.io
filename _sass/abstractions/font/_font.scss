@@ -14,7 +14,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap');
 
-@mixin font-uppercase($font-size: 18px, $font-color: $color-orange) {
+@mixin font-uppercase($font-size: 18px, $font-color: $color-red) {
     font-family: $font-family-rubik;
     color: $font-color;
     text-transform: uppercase;

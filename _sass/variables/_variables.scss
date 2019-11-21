@@ -12,7 +12,7 @@ $spacing-unit:          30px !default;
 
 // Generic colors.
 $color-white: #fff;
-$color-red: red;
+$color-red: #E60A00;
 $color-orange: #ff8a00;
 $color-midnight: #001628;
 $color-darkblue: rgb(0, 0, 192);
@@ -23,7 +23,7 @@ $color-gray-med: #3b4048;
 // Variables for tables.
 $table-text-color:      $color-white !default;
 $table-zebra-color:     $color-gray-med !default;
-$table-header-bg-color: $color-orange !default;
+$table-header-bg-color: $color-red !default;
 $table-header-text-color: $color-black !default;
 $table-header-border:   lighten($brand-color, 36%) !default;
 $table-border-color:    $color-black !default;
@@ -48,7 +48,7 @@ $hero-default-bg-color: $color-gray-med;
 // Footer colors.
 $footer-bg-color: $highlight-bg-color;
 
-$tag-bg-color: $color-orange;
+$tag-bg-color: $color-red;
 
 // Font family variables
 $font-family-rubik: Rubik,Lato,lucida grande,lucida sans unicode,Tahoma,Sans-Serif;
