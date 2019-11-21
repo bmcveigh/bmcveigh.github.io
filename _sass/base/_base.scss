@@ -4,6 +4,10 @@
 
 body {
     margin: 0;
+    background: $color-gray;
+    color: $color-white;
+    font-family: Bitter, sans-serif;
+    font-size: 1.2rem;
 }
 
 a {
@@ -20,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-roboto;
 
     a {
-        color: inherit;
+        color: $link-color;
     }
 }
 
@@ -43,7 +47,8 @@ ul {
 /**
  * Tables
  */
- table {
+ table:not(.rouge-table) {
+    background: $color-white;
     margin-bottom: $spacing-unit;
     width: 100%;
     text-align: $table-text-align;

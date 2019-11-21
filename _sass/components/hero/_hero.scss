@@ -1,8 +1,7 @@
 .hero {
-    background: $color-gray;
-    color: $color-white;
+    background: $hero-default-bg-color;
     font-family: Bitter, sans-serif;
-    padding: 17px 90px;
+    padding: 17px 72px;
     min-height: 200px;
     
     .metadata {
