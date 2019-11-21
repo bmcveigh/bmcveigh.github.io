@@ -32,18 +32,20 @@ layout: default
                     </td>
                 </tr>
             {% endif %}
-            {% if page.prerequisites %}
-                <tr class="row-prerequisites">
-                    <td><strong>Prerequisites:</strong></td>
-                    <td>
+            <tr class="row-prerequisites">
+                <td><strong>Prerequisites:</strong></td>
+                <td>
+                    {% if page.prerequisites %}
                         <ul>
                             {% for prerequisite in page.prerequisites %}
                                 <li><a href="{{ prerequisite.url }}">{{ prerequisite.title }}</a></li>
                             {% endfor %}
                         </ul>
-                    </td>
-                </tr>
-            {% endif %}
+                    {% else %}
+                        <strong>None</strong>
+                    {% endif %}
+                </td>
+            </tr>
             {% if page.tools_used %}
             <tr class="row-tools-used">
                 <td><strong>Tools Used:</strong></td>
