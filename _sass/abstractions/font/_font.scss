@@ -23,3 +23,7 @@ body {
     text-transform: uppercase;
     font-size: $font-size;
 }
+@mixin font-orange-normal($font-size: 18px) {
+    @include font-orange-uppercase($font-size);
+    text-transform: none;
+}

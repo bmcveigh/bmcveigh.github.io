@@ -1,0 +1,15 @@
+.tutorial-information {
+    background: $color-midnight;
+    color: $color-white;
+    border-radius: 8px;
+    padding: 5px 20px;
+
+    table {
+        background: $color-white;
+
+        .row-categories li {
+            font-weight: bold;
+        }
+    }
+    
+}

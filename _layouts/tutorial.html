@@ -7,22 +7,57 @@ layout: default
     Posted on <span class="post-date">{{ page.date | date: '%B %d, %Y' }}</span>
 </p>
 
-{% if page.prerequisites %}
-    <h3>Prerequisites</h3>
-    <ul>
-        {% for prerequisite in page.prerequisites %}
-            <a href="{{ prerequisite.url }}">{{ prerequisite.title }}</a>
-        {% endfor %}
-    </ul>
-{% endif %}
+<div class="tutorial-information">
+    <h3>About this Tutorial</h3>
 
-{% if page.tools_used %}
-    <h3>Tools Used</h3>
-    <ul>
-        {% for tool in page.tools_used %}
-            <a href="{{ tool.url }}">{{ tool.title }}</a>
-        {% endfor %}
-    </ul>
-{% endif %}
+    <table>
+        <tbody>
+            {% if page.description %}
+                <tr class="row-description">
+                    <td><strong>Description:</strong></td>
+                    <td>
+                        <span>{{ page.description }}</span>
+                    </td>
+                </tr>
+            {% endif %}
+            {% if page.categories %}
+                <tr class="row-categories">
+                    <td><strong>Categories:</strong></td>
+                    <td>
+                        <ul>
+                            {% for category in page.categories %}
+                                <li>{{ category }}</li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                </tr>
+            {% endif %}
+            {% if page.prerequisites %}
+                <tr class="row-prerequisites">
+                    <td><strong>Prerequisites:</strong></td>
+                    <td>
+                        <ul>
+                            {% for prerequisite in page.prerequisites %}
+                                <li><a href="{{ prerequisite.url }}">{{ prerequisite.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                </tr>
+            {% endif %}
+            {% if page.tools_used %}
+            <tr class="row-tools-used">
+                <td><strong>Tools Used:</strong></td>
+                <td>
+                    <ul>
+                        {% for tool in page.tools_used %}
+                            <li><a href="{{ prerequisite.url }}">{{ tool.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+            {% endif %}
+        </tbody>
+    </table>
+</div>
 
 {{ content }}
