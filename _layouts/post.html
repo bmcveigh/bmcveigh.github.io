@@ -1,14 +1,7 @@
 ---
 layout: default
 ---
-<div class="page-navigation">
-    {% if page.next.url %}
-        <a class="next" href="{{page.next.url}}">&laquo; {{page.next.title | strip_html | truncatewords: 5 }}</a>
-    {% endif %}
-    {% if page.previous.url %}
-        <a class="prev" href="{{page.previous.url}}">{{page.previous.title | strip_html | truncatewords: 5 }} &raquo;</a>
-    {% endif %}
-</div>
+{% include post_navigation.html %}
 <h2>{{ page.title }}</h2>
 <p class="post-date-wrap">
     Posted on <span class="post-date">{{ page.date | date: '%B %d, %Y' }}</span>

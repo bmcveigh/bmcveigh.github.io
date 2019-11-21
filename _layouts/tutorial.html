@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{% include post_navigation.html %}
+<h2>{{ page.title }}</h2>
+<p class="post-date-wrap">
+    Posted on <span class="post-date">{{ page.date | date: '%B %d, %Y' }}</span>
+</p>
+
+{% if page.prerequisites %}
+    <h3>Prerequisites</h3>
+    <ul>
+        {% for prerequisite in page.prerequisites %}
+            <a href="{{ prerequisite.url }}">{{ prerequisite.title }}</a>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% if page.tools_used %}
+    <h3>Tools Used</h3>
+    <ul>
+        {% for tool in page.tools_used %}
+            <a href="{{ tool.url }}">{{ tool.title }}</a>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{{ content }}
