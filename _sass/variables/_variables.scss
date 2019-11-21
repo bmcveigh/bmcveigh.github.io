@@ -41,7 +41,7 @@ $highlight-functions-color: cyan;
 $highlight-variables-color: lightblue;
 
 $link-color: $color-white;
-$link-hover-color: $color-orange;
+$link-hover-color: $color-red;
 
 $hero-default-bg-color: $color-gray-med;
 
@@ -49,6 +49,8 @@ $hero-default-bg-color: $color-gray-med;
 $footer-bg-color: $highlight-bg-color;
 
 $tag-bg-color: $color-red;
+
+$post-date-text-color: $color-red;
 
 // Font family variables
 $font-family-rubik: Rubik,Lato,lucida grande,lucida sans unicode,Tahoma,Sans-Serif;

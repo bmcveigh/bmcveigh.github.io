@@ -30,7 +30,7 @@ github_username:  bmcveigh
 # Custom configuration.
 custom_config:
   messages:
-    post_index_message: Click on a post to start reading about it...
+    post_index_message: When life gives you lemons, make lemonade...
 
 # Build settings
 # theme: minima
