@@ -10,14 +10,6 @@ $text-color:            #111 !default;
 
 $spacing-unit:          30px !default;
 
-// Variables for tables.
-$table-text-color:      lighten($text-color, 18%) !default;
-$table-zebra-color:     lighten($brand-color, 46%) !default;
-$table-header-bg-color: lighten($brand-color, 43%) !default;
-$table-header-border:   lighten($brand-color, 36%) !default;
-$table-border-color:    $brand-color-light !default;
-$table-text-align: left !default;
-
 // Generic colors.
 $color-white: #fff;
 $color-red: red;
@@ -26,6 +18,17 @@ $color-midnight: #001628;
 $color-darkblue: rgb(0, 0, 192);
 $color-black: #000;
 $color-gray: rgb(51, 51, 51);
+$color-gray-med: #3b4048;
+
+// Variables for tables.
+$table-text-color:      $color-white !default;
+$table-zebra-color:     $color-gray-med !default;
+$table-header-bg-color: $color-orange !default;
+$table-header-text-color: $color-black !default;
+$table-header-border:   lighten($brand-color, 36%) !default;
+$table-border-color:    $color-black !default;
+$table-text-align: left !default;
+$table-bg-color: $color-gray;
 
 // Syntax highlight colors.
 $highlight-code-color: #9c27b0;
@@ -40,7 +43,7 @@ $highlight-variables-color: lightblue;
 $link-color: $color-white;
 $link-hover-color: $color-orange;
 
-$hero-default-bg-color: #3b4048;
+$hero-default-bg-color: $color-gray-med;
 
 // Footer colors.
 $footer-bg-color: $highlight-bg-color;

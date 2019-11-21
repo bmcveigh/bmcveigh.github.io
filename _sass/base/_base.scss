@@ -48,7 +48,7 @@ ul {
  * Tables
  */
  table:not(.rouge-table) {
-    background: $color-white;
+    background: $table-bg-color;
     margin-bottom: $spacing-unit;
     width: 100%;
     text-align: $table-text-align;
@@ -57,7 +57,7 @@ ul {
     border: 1px solid $table-border-color;
     tr {
         &:nth-child(even) {
-        background-color: $table-zebra-color;
+            background-color: $table-zebra-color;
         }
     }
     th, td {
@@ -65,9 +65,10 @@ ul {
     }
     th {
         background-color: $table-header-bg-color;
-        border: 1px solid $table-header-border;
+        border: 1px solid $table-border-color;
+        color: $table-header-text-color;
     }
     td {
-        border: 1px solid $brand-color-light;
+        border: 1px solid $table-border-color;
     }
 }
