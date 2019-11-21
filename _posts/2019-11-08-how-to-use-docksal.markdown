@@ -1,8 +1,15 @@
 ---
-layout: post
+layout: tutorial
 title:  "How to: Use Docksal"
 date:   2019-11-08 12:00:59 -0500
 categories: docksal development
+description: In this tutorial, we will take a look at using Docksal to create a Drupal site.
+tools_used:
+- title: 'Docksal'
+  url: 'https://docksal.io'
+
+- title: 'Drupal'
+  url: 'https://www.drupal.org'
 ---
 Docksal is a Docker container service for PHP projects such as Drupal or Laravel that provides tools like composer, npm, and drush. It is available for Windows, Mac, and Linux operating systems. Personally, I really like using it and I think you will too once you get it working. Below are the available content management systems that Docksal supports:
 

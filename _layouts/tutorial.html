@@ -36,11 +36,11 @@ layout: default
                 <td><strong>Prerequisites:</strong></td>
                 <td>
                     {% if page.prerequisites %}
-                        <ul>
-                            {% for prerequisite in page.prerequisites %}
-                                <li><a href="{{ prerequisite.url }}">{{ prerequisite.title }}</a></li>
-                            {% endfor %}
-                        </ul>
+                    <ul>
+                        {% for prerequisite in page.prerequisites %}
+                            <li><a href="{{ prerequisite.url }}">{{ prerequisite.title }}</a></li>
+                        {% endfor %}
+                    </ul>
                     {% else %}
                         <strong>None</strong>
                     {% endif %}
@@ -52,7 +52,7 @@ layout: default
                 <td>
                     <ul>
                         {% for tool in page.tools_used %}
-                            <li><a href="{{ prerequisite.url }}">{{ tool.title }}</a></li>
+                            <li><a href="{{ tool.url }}">{{ tool.title }}</a></li>
                         {% endfor %}
                     </ul>
                 </td>
