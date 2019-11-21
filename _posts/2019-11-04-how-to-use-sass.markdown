@@ -60,3 +60,6 @@ From within your theme, run `mkdir sass && touch sass/index.scss` if you do not 
 ### Step 7: Run gulp to make sure it is working properly
 
 `gulp`
+
+If gulp is working properly, you should see something like this in your terminal:
+![Gulp is working](/assets/img/gulpSassSuccessMessage.PNG)

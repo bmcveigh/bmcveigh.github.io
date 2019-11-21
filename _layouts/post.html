@@ -2,11 +2,11 @@
 layout: default
 ---
 <div class="page-navigation">
-    {% if page.previous.url %}
-        <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title | strip_html | truncatewords: 5 }}</a>
-    {% endif %}
     {% if page.next.url %}
-        <a class="next" href="{{page.next.url}}">{{page.next.title | strip_html | truncatewords: 5 }} &raquo;</a>
+        <a class="next" href="{{page.next.url}}">&laquo; {{page.next.title | strip_html | truncatewords: 5 }}</a>
+    {% endif %}
+    {% if page.previous.url %}
+        <a class="prev" href="{{page.previous.url}}">{{page.previous.title | strip_html | truncatewords: 5 }} &raquo;</a>
     {% endif %}
 </div>
 <h2>{{ page.title }}</h2>
