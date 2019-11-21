@@ -3,7 +3,7 @@
 //
 
 .tag {
-    background: $color-darkblue;
+    background: $tag-bg-color;
     border-radius: 3px 0 0 3px;
     color: $color-white;
     display: inline-block;
@@ -23,7 +23,7 @@
     box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
     content: '';
     height: 6px;
-    left: 23px;
+    left: 10px;
     position: absolute;
     width: 6px;
     top: 10px;
@@ -32,7 +32,7 @@
   .tag::after {
     background: $color-white;
     border-bottom: 13px solid transparent;
-    border-left: 10px solid $color-darkblue;
+    border-left: 10px solid $tag-bg-color;
     border-top: 13px solid transparent;
     content: '';
     position: absolute;
@@ -47,4 +47,8 @@
   
   .tag:hover::after {
      border-left-color: $color-darkblue;
+  }
+
+  .tutorial-information .tag::after {
+    background: $color-gray;
   }

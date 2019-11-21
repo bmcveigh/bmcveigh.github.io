@@ -4,6 +4,7 @@ title:  "How to: Use Create React App"
 date:   2019-11-21 09:53:59 -0500
 categories: tutorials javascript react
 description: In this tutorial, we will take a look at creating a new React site using create-react-app.
+difficulty: Beginner
 tools_used:
 - title: 'NodeJS'
   url: '#'

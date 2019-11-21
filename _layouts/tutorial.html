@@ -1,64 +1,15 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="post-date-wrap">
-    Posted on <span class="post-date">{{ page.date | date: '%B %d, %Y' }}</span>
-</p>
-
-<div class="tutorial-information">
-    <h3>About this Tutorial</h3>
-
-    <table>
-        <tbody>
-            {% if page.description %}
-                <tr class="row-description">
-                    <td class="label-col">Description</td>
-                    <td>
-                        <span>{{ page.description }}</span>
-                    </td>
-                </tr>
-            {% endif %}
-            {% if page.categories %}
-                <tr class="row-categories">
-                    <td class="label-col">Categories</td>
-                    <td>
-                        <ul>
-                            {% for category in page.categories %}
-                                <li class="tag">{{ category }}</li>
-                            {% endfor %}
-                        </ul>
-                    </td>
-                </tr>
-            {% endif %}
-            <tr class="row-prerequisites">
-                <td class="label-col">Prerequisites</td>
-                <td>
-                    {% if page.prerequisites %}
-                    <ul>
-                        {% for prerequisite in page.prerequisites %}
-                            <li><a href="{{ prerequisite.url }}">{{ prerequisite.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                    {% else %}
-                        <strong>None</strong>
-                    {% endif %}
-                </td>
-            </tr>
-            {% if page.tools_used %}
-            <tr class="row-tools-used">
-                <td class="label-col">Tools Used</td>
-                <td>
-                    <ul>
-                        {% for tool in page.tools_used %}
-                            <li><a href="{{ tool.url }}">{{ tool.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </td>
-            </tr>
-            {% endif %}
-        </tbody>
-    </table>
+<div class="tutorial-information hero">
+    <h2 class="title">{{ page.title }}</h2>
+    <div class="metadata">{{ page.date | date: '%B %d, %Y' }} &bull; Tutorial &bull; {{ page.difficulty }}</div>
+    <div class="description">{{ page.description }}</div>
+    <div class="tags">
+        {% for category in page.categories %}
+            <span class="tag">{{ category }}</span>
+        {% endfor %}
+    </div>
 </div>
 
 {{ content }}

@@ -1,0 +1,16 @@
+.hero {
+    background: $color-gray;
+    color: $color-white;
+    font-family: Bitter, sans-serif;
+    padding: 17px 90px;
+    min-height: 200px;
+    
+    .metadata {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    .description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+}

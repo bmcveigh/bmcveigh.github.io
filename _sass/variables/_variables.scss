@@ -25,6 +25,7 @@ $color-orange: #ff8a00;
 $color-midnight: #001628;
 $color-darkblue: rgb(0, 0, 192);
 $color-black: #000;
+$color-gray: rgb(51, 51, 51);
 
 // Syntax highlight colors.
 $highlight-code-color: #9c27b0;
@@ -41,6 +42,8 @@ $link-hover-color: crimson;
 
 // Footer colors.
 $footer-bg-color: $highlight-bg-color;
+
+$tag-bg-color: #3b4048;
 
 // Font family variables
 $font-family-rubik: Rubik,Lato,lucida grande,lucida sans unicode,Tahoma,Sans-Serif;
