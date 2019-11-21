@@ -39,16 +39,7 @@
     right: 0;
     top: 0;
   }
-  
-  .tag:hover {
-    background: $color-darkblue;
-    color: $color-white;
-  }
-  
-  .tag:hover::after {
-     border-left-color: $color-darkblue;
-  }
 
-  .tutorial-information .tag::after {
+.tutorial-information .tag::after {
     background: $hero-default-bg-color;
-  }
+}

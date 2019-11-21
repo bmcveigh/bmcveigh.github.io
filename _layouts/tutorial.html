@@ -10,6 +10,18 @@ layout: default
             <span class="tag">{{ category }}</span>
         {% endfor %}
     </div>
+    {% if page.prerequisites %}
+        <div class="prerequisites">
+            <h3>Prerequisites</h3>
+            <ul>
+                {% for prereq in page.prerequisites %}
+                <li>
+                     <a href="{{ prereq.url }}">{{ prereq.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
 </div>
 
 {{ content }}
