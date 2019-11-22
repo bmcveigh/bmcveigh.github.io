@@ -1,11 +1,11 @@
 docs_list_title: Main Menu
 docs:
 
-- title: Home
-  url: /
-
 - title: About
   url: /about/
+
+- title: Tutorials
+  url: /tutorials/
 
 - title: Work Experience
   url: /work-experience/
