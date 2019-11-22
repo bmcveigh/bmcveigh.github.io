@@ -8,5 +8,8 @@
         {% for item in site.data.mainmenulist.docs %}
             <li><a href="{{ item.url }}">{{ item.title }}</a></li>
         {% endfor %}
+        <li>
+           {% include search.html %}
+        </li>
     </ul>
 </header>
