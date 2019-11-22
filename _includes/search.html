@@ -1,10 +1,35 @@
-<a class="search-link" href="#"><i class="fa fa-search"></i></a>
-<div class="search-wrap">
-    <form action="">
-         <input type="text" placeholder="Enter keywords..." />
-    </form>
-    <div class="search-results">
-        <div class="search-result">Foo</div>
-        <div class="search-result">Bar</div>
+<span id="search">
+        <a
+        class="search-link"
+        href="#"
+        v-on:click="handleSearchClick"
+    >
+        <i class="fa fa-search"></i>
+    </a>
+    <div class="search-wrap" v-if="showSearch">
+        <form action="">
+             <input type="text" placeholder="Enter keywords..." />
+        </form>
+        <div class="search-results">
+            <div class="search-result">Foo</div>
+            <div class="search-result">Bar</div>
+        </div>
     </div>
-</div>
+</span>
+<script>
+    /**
+     * Use VueJS to make the search functionality interactive.
+     */
+    var app = new Vue({
+        el: '#search',
+        data: {
+            showSearch: false
+        },
+        methods: {
+            handleSearchClick: function(event) {
+                event.preventDefault();
+                this.showSearch = !this.showSearch;
+            }
+        }
+    });
+</script>
