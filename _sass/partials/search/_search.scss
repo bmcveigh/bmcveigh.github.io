@@ -5,7 +5,8 @@
     position: fixed;
     // display: none;
     width: 50%;
-    min-height: 400px;
+    height: 400px;
+    overflow: auto;
     left: 20%;
     top: 150px;
     background: $modal-bg-color;
@@ -40,13 +41,17 @@
         position: absolute;
         top: 120px;
         left: 5%;
-        height: 200px;
         width: 90%;
 
          .search-result {
             padding: 20px;
             border-bottom: 1px solid #fff;
             width: inherit;
+
+            a {
+                color: $color-white;
+                text-transform: none;
+            }
         }
     }
    

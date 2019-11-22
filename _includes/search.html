@@ -8,11 +8,18 @@
     </a>
     <div class="search-wrap" v-if="showSearch">
         <form action="">
-             <input type="text" placeholder="Enter keywords..." />
+             <input
+                type="text"
+                placeholder="Enter keywords..."
+                v-on:keyup="handleChange"
+            />
         </form>
         <div class="search-results">
-            <div class="search-result">Foo</div>
-            <div class="search-result">Bar</div>
+            <div class="search-result" 
+                v-for="post in posts"
+                >
+                <a v-bind:href="post.url" v-text="post.title"></a>
+            </div>
         </div>
     </div>
 </span>
@@ -23,12 +30,34 @@
     var app = new Vue({
         el: '#search',
         data: {
-            showSearch: false
+            showSearch: false,
+            posts: [],
         },
         methods: {
             handleSearchClick: function(event) {
                 event.preventDefault();
                 this.showSearch = !this.showSearch;
+            },
+            handleChange: async function(event) {
+                if (!this.posts.length) {
+                    this.posts = await fetch('/api/posts.json')
+                    .then(res => res.json())
+                    .then(json => json)
+                    .catch(error => {
+                        // catch error.
+                    });
+                }
+                
+                const keywords = event.target.value;
+                const filteredPosts = [];
+
+                for (const post of this.posts) {
+                    if (post.title.toLowerCase().indexOf(keywords.toLowerCase()) > -1) {
+                        filteredPosts.push(post);
+                    }
+                }
+
+                this.posts = filteredPosts;
             }
         }
     });
