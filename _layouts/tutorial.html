@@ -1,27 +1,39 @@
----
-layout: default
----
-<div class="tutorial-information hero">
-    <h2 class="title">{{ page.title }}</h2>
-    <div class="metadata">{{ page.date | date: '%B %d, %Y' }} &bull; Tutorial &bull; {{ page.difficulty }}</div>
-    <div class="description">{{ page.description }}</div>
-    <div class="tags">
-        {% for category in page.categories %}
-            <span class="tag">{{ category }}</span>
-        {% endfor %}
-    </div>
-    {% if page.prerequisites %}
-        <div class="prerequisites">
-            <h3>Prerequisites</h3>
-            <ul>
-                {% for prereq in page.prerequisites %}
-                <li>
-                     <a href="{{ prereq.url }}">{{ prereq.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    {% endif %}
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
-{{ content }}
+  {% include head.html %}
+
+<body>
+    <div class="container">
+        {% include navbar.html %}
+
+        <div class="tutorial-information hero">
+            <h2 class="title">{{ page.title }}</h2>
+            <div class="metadata">{{ page.date | date: '%B %d, %Y' }} &bull; Tutorial &bull; {{ page.difficulty }}</div>
+            <div class="description">{{ page.description }}</div>
+            <div class="tags">
+                {% for category in page.categories %}
+                    <span class="tag">{{ category }}</span>
+                {% endfor %}
+            </div>
+            {% if page.prerequisites %}
+                <div class="prerequisites">
+                    <h3>Prerequisites</h3>
+                    <ul>
+                        {% for prereq in page.prerequisites %}
+                        <li>
+                            <a href="{{ prereq.url }}">{{ prereq.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+        </div>
+
+        <div id="content">
+            {{ content }}
+            {% include post_navigation.html %}
+        </div>
+    </div>
+</body>
+</html>
