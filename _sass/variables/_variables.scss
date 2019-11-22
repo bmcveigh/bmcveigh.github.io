@@ -40,6 +40,10 @@ $highlight-comments-color: #d0d0d0;
 $highlight-functions-color: cyan;
 $highlight-variables-color: lightblue;
 
+// Styling for modals. An example of this is global search.
+$modal-bg-color: rgba(0, 0, 0, 0.7);
+$modal-input-text-bg-color: lighten($modal-bg-color, 36%) !default;
+
 $link-color: $color-white;
 $link-hover-color: $color-red;
 

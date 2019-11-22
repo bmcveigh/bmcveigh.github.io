@@ -1,0 +1,43 @@
+ //
+ // Styling for the search pop-up.
+ //
+ .search-wrap {
+    position: fixed;
+    // display: none;
+    width: 50%;
+    min-height: 400px;
+    left: 20%;
+    top: 150px;
+    background: $modal-bg-color;
+    border-radius: 8px;
+
+    &.show {
+        display: block;
+    }
+
+    .search-title {
+        margin-left: 20px;
+    }
+
+    input[type="text"] {
+        position: absolute;
+        background: $modal-input-text-bg-color;
+        top: 65px;
+        border: none;
+    }
+
+    .search-results {
+        position: absolute;
+        top: 120px;
+        left: 5%;
+        height: 200px;
+        width: 90%;
+
+         .search-result {
+            padding: 20px;
+            border-bottom: 1px solid #fff;
+            width: inherit;
+        }
+    }
+   
+}
