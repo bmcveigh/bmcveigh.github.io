@@ -58,6 +58,11 @@
                 this.keywords = event.target.value;
                 const filteredPosts = [];
 
+                if (!this.keywords.length) {
+                    this.posts = [];
+                    return;
+                }
+
                 for (const post of this.posts) {
                     if (post.title.toLowerCase().indexOf(this.keywords.toLowerCase()) > -1) {
                         filteredPosts.push(post);

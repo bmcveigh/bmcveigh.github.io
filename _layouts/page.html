@@ -5,18 +5,7 @@
 
   <body class="layout-page">
     <div class="container">
-      <header class="masthead">
-        <h3 class="masthead-title">
-          <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
-        </h3>
-        <small>{{ site.tagline }}</small>
-
-        <ul class="main-menu-list">
-          {% for item in site.data.mainmenulist.docs %}
-              <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </header>
+     {% include navbar.html %}
 
       <div id="content">
           <h2>{{ page.title }}</h2>
