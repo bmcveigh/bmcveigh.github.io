@@ -4,6 +4,7 @@ title:  "How to: Use Docksal"
 date:   2019-11-08 12:00:59 -0500
 categories: docksal development
 description: In this tutorial, we will take a look at using Docksal to create a Drupal site.
+difficulty: Beginner
 tools_used:
 - title: 'Docksal'
   url: 'https://docksal.io'

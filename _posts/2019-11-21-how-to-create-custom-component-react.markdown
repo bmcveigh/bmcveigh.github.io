@@ -14,4 +14,24 @@ tools_used:
 - title: 'NPM'
   url: '#'
 ---
-Lorem ipsum
+React has a concept called components. Components are basically objects that represent something.
+For example, we could have an image component or a table component. To build our component, we will
+use create-react-app. If you are not familiar with create-react-app, see the prerequisite listed above.
+
+In this tutorial, we will be creating a component called **HelloWorld**. To get started, let's create a
+directory within src called components and another directory in components called HelloWorld.
+
+Inside the HelloWorld directory, add a file called HelloWorld.js and paste in the following code:
+
+{% highlight javascript %}
+const HelloWorld = () => (
+    <div>Hello, world!</div>
+);
+
+export default HelloWorld;
+{% endhighlight %}
+
+Now, inside App.js within your src directory, make sure to import the HelloWorld.js file and add
+`<HelloWorld />` in between the opening and closing `<App />` tags.
+
+Once you've done that, run `npm start` and you should now see the text **Hello, world!** on the page.
