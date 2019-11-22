@@ -44,8 +44,8 @@ $highlight-variables-color: lightblue;
 $modal-bg-color: rgba(0, 0, 0, 0.7);
 $modal-input-text-color: $color-white;
 $modal-input-text-bg-color: lighten($modal-bg-color, 36%) !default;
-$modal-input-border: 2px solid transparent;
-$modal-input-focus-border: 2px solid $color-red;
+$modal-input-border: 0;
+$modal-input-focus-border: 0;
 $modal-input-placeholder-text-color: lighten($modal-bg-color, 70%) !default;
 
 $link-color: $color-white;

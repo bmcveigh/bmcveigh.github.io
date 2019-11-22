@@ -25,7 +25,7 @@
         background: $modal-input-text-bg-color;
         color: $modal-input-text-color;
         top: 65px;
-        border: 1px solid transparent;
+        border: $modal-input-border;
 
         &::placeholder {
             color: $modal-input-placeholder-text-color;

@@ -20,6 +20,12 @@
                 >
                 <a v-bind:href="post.url" v-text="post.title"></a>
             </div>
+            <div v-if="!posts.length && keywords.length">
+                <h3>No results found.</h3>
+            </div>
+            <div v-else-if="!posts.length && !keywords.length">
+                <h3>Results will show up here as you type.</h3>
+            </div>
         </div>
     </div>
 </span>
@@ -31,6 +37,7 @@
         el: '#search',
         data: {
             showSearch: false,
+            keywords: '',
             posts: [],
         },
         methods: {
@@ -48,11 +55,11 @@
                     });
                 }
                 
-                const keywords = event.target.value;
+                this.keywords = event.target.value;
                 const filteredPosts = [];
 
                 for (const post of this.posts) {
-                    if (post.title.toLowerCase().indexOf(keywords.toLowerCase()) > -1) {
+                    if (post.title.toLowerCase().indexOf(this.keywords.toLowerCase()) > -1) {
                         filteredPosts.push(post);
                     }
                 }
