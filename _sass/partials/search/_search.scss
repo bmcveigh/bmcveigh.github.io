@@ -8,7 +8,7 @@
     height: 400px;
     overflow: auto;
     left: 20%;
-    top: 150px;
+    top: 30%;
     background: $modal-bg-color;
     border-radius: 8px;
 
@@ -24,8 +24,10 @@
         position: absolute;
         background: $modal-input-text-bg-color;
         color: $modal-input-text-color;
-        top: 65px;
+        top: 10%;
         border: $modal-input-border;
+        position: absolute;
+        margin: 2%;
 
         &::placeholder {
             color: $modal-input-placeholder-text-color;
