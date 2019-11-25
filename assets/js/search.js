@@ -1,7 +1,7 @@
 /**
  * Use VueJS to make the search functionality interactive.
  */
-var app = new Vue({
+new Vue({
     el: '#search',
     data: {
         showSearch: false,
