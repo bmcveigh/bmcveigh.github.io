@@ -10,8 +10,18 @@ new Vue({
         filteredPosts: [],
     },
     methods: {
-        handleSearchClick: function(event) {
+        handleSearchClick: async function(event) {
             event.preventDefault();
+
+            if (!this.posts.length) {
+                this.posts = await fetch('/api/posts.json')
+                .then(res => res.json())
+                .then(json => json)
+                .catch(error => {
+                    // catch error.
+                });
+            }
+
             this.showSearch = !this.showSearch;
         },
         handleKeyDown: (event) => {
@@ -21,16 +31,7 @@ new Vue({
                 this.filteredPosts = this.posts;
             }
         },
-        handleKeyUp: async function(event) {
-            if (!this.posts.length) {
-                this.posts = await fetch('/api/posts.json')
-                .then(res => res.json())
-                .then(json => json)
-                .catch(error => {
-                    // catch error.
-                });
-            }
-            
+        handleKeyUp: function(event) {
             this.keywords = event.target.value.toLowerCase();
             this.filteredPosts = [];
 
