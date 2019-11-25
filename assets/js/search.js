@@ -39,6 +39,8 @@ new Vue({
                 this.filteredPosts = this.posts;
             }
 
+            let text = '';
+
             // Highlight next item if down arrow key pressed.
             if (event.which === 40) {
                 // Numeric value to see if there is another row after the selected one.
@@ -49,11 +51,15 @@ new Vue({
                         this.$refs.searchResult[this.selectedSearchResIndex].className === ''
                     ) {
                         this.$refs.searchResult[this.selectedSearchResIndex].className = 'selected';
+                        text = this.$refs.searchResult[this.selectedSearchResIndex].text;
                     }
                     else if (this.$refs.searchResult[nextIndex]) {
                         this.$refs.searchResult[this.selectedSearchResIndex].className = '';
                         this.$refs.searchResult[++this.selectedSearchResIndex].className = 'selected';
+                        text = this.$refs.searchResult[this.selectedSearchResIndex].text;
                     }
+
+                   
                 }
             }
             // Highlight next item if up arrow key pressed.
@@ -64,8 +70,13 @@ new Vue({
                     if (this.$refs.searchResult[this.selectedSearchResIndex] && this.$refs.searchResult[prevIndex]) {
                         this.$refs.searchResult[this.selectedSearchResIndex].className = '';
                         this.$refs.searchResult[--this.selectedSearchResIndex].className = 'selected';
+                        text = this.$refs.searchResult[this.selectedSearchResIndex].text;
                     }
                 }
+            }
+            if (text.length) {
+                this.keywords = text;
+                this.$refs.search.value = text;
             }
         },
         handleInput: function(event) {
