@@ -11,3 +11,7 @@ for "Command Prompt", right click "Run as Administrator", and paste in the follo
 `MOFCOMP %SYSTEMROOT%\System32\WindowsVirtualization.V2.mof`
 
 Once this command has run, reset Docker Desktop and you should be able to start Docker Desktop without any errors now.
+
+**Link to where I found this answer**: [https://community.spiceworks.com/how_to/122307-fix-error-managing-hyper-v-server-2012-r2-from-windows-10](https://community.spiceworks.com/how_to/122307-fix-error-managing-hyper-v-server-2012-r2-from-windows-10)
+
+Hope this helps someone other than just myself!

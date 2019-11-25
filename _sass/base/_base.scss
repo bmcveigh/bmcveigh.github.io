@@ -19,6 +19,10 @@ a {
         color: $link-hover-color;
     }
 }
+p a {
+    color: $color-orange;
+    text-decoration: underline;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-roboto;
