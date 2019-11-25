@@ -31,7 +31,7 @@ new Vue({
                 this.filteredPosts = this.posts;
             }
         },
-        handleKeyUp: function(event) {
+        handleInput: function(event) {
             this.keywords = event.target.value.toLowerCase();
             this.filteredPosts = [];
 

@@ -7,13 +7,14 @@
         <i class="fa fa-search"></i>
     </a>
     <div class="search-wrap" v-if="showSearch">
-        <form action="">
+        <form action="/">
              <input
                 type="text"
                 placeholder="Enter keywords..."
                 v-on:keydown="handleKeyDown"
-                v-on:input="handleKeyUp"
+                v-on:input="handleInput"
                 autofocus
+                ref="search"
             />
         </form>
         <div class="search-results">
