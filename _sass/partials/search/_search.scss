@@ -6,7 +6,8 @@
     // display: none;
     width: 50%;
     height: 400px;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     left: 20%;
     top: 30%;
     background: $modal-bg-color;
@@ -75,7 +76,9 @@
                     width: 100%;
                     height: inherit;
 
-                    &.selected {
+                    &.selected,
+                    &:focus,
+                    &:hover {
                         background: $color-red;
                         height: inherit;
                     }
