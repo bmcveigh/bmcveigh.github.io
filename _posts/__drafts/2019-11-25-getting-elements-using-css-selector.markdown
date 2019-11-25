@@ -1,4 +1,4 @@
---
+---
 type: tutorial
 title: Getting elements using a CSS selector (not jQuery)
 category: tutorials javascript
@@ -7,7 +7,7 @@ date:   2019-11-25 17:53:00 -0500
 tags: 
   - Tutorials
   - JavaScript
---
+---
 Until recently, I discovered that you can retrieve HTML DOM elements using CSS selectors. This can be done by calling ‘document.querySelector(‘.your-class’)’ in your JS code. Previously, I was using jQuery to do this.
 
 Here is an example:
