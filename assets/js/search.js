@@ -39,16 +39,33 @@ new Vue({
                 this.filteredPosts = this.posts;
             }
 
+            // Highlight next item if down arrow key pressed.
             if (event.which === 40) {
+                // Numeric value to see if there is another row after the selected one.
+                const nextIndex = this.selectedSearchResIndex + 1;
+
                 if (this.$refs.searchResult && this.$refs.searchResult.length) {
-                    if (this.$refs.searchResult[this.selectedSearchResIndex]) {
+                    if (this.$refs.searchResult[this.selectedSearchResIndex] &&
+                        this.$refs.searchResult[this.selectedSearchResIndex].className === ''
+                    ) {
+                        this.$refs.searchResult[this.selectedSearchResIndex].className = 'selected';
+                    }
+                    else if (this.$refs.searchResult[nextIndex]) {
                         this.$refs.searchResult[this.selectedSearchResIndex].className = '';
-                        this.$refs.searchResult[++this.selectedSearchResIndex].className = 'selected'; 
+                        this.$refs.searchResult[++this.selectedSearchResIndex].className = 'selected';
                     }
                 }
             }
+            // Highlight next item if up arrow key pressed.
             else if (event.which === 38) {
-
+                if (this.$refs.searchResult && this.$refs.searchResult.length) {
+                    const prevIndex = this.selectedSearchResIndex - 1;
+                    
+                    if (this.$refs.searchResult[this.selectedSearchResIndex] && this.$refs.searchResult[prevIndex]) {
+                        this.$refs.searchResult[this.selectedSearchResIndex].className = '';
+                        this.$refs.searchResult[--this.selectedSearchResIndex].className = 'selected';
+                    }
+                }
             }
         },
         handleInput: function(event) {
