@@ -6,7 +6,7 @@
     >
         <i class="fa fa-search"></i>
     </a>
-    <div class="search-wrap" v-if="showSearch">
+    <div class="search-wrap" v-bind:class="{ hidden: !showSearch }">
         <form action="/">
              <input
                 type="text"
@@ -16,7 +16,6 @@
                 autofocus
                 ref="search"
             />
-        </form>
         <div class="search-results">
             <div v-if="!filteredPosts.length && keywords.length">
                 <h3>No results found.</h3>

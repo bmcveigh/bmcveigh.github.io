@@ -23,6 +23,13 @@ new Vue({
             }
 
             this.showSearch = !this.showSearch;
+            const refs = this.$refs;
+
+            // Set the input field to be auto-focused when user clicks
+            // search button.
+            setTimeout(function() {
+                refs.search.focus();
+            }, 10);
         },
         handleKeyDown: (event) => {
             // If delete key is pressed, set the filtered posts to posts
@@ -45,6 +52,6 @@ new Vue({
                     this.filteredPosts.push(post);
                 }
             }
-        }
+        },
     }
 });
