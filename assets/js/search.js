@@ -8,6 +8,7 @@ new Vue({
         keywords: '',
         posts: [],
         filteredPosts: [],
+        selectedSearchResIndex: 0,
     },
     methods: {
         handleSearchClick: async function(event) {
@@ -31,11 +32,23 @@ new Vue({
                 refs.search.focus();
             }, 10);
         },
-        handleKeyDown: (event) => {
+        handleKeyDown: function(event) {
             // If delete key is pressed, set the filtered posts to posts
             // so other results will still show up.
             if (event.which === 8) {
                 this.filteredPosts = this.posts;
+            }
+
+            if (event.which === 40) {
+                if (this.$refs.searchResult && this.$refs.searchResult.length) {
+                    if (this.$refs.searchResult[this.selectedSearchResIndex]) {
+                        this.$refs.searchResult[this.selectedSearchResIndex].className = '';
+                        this.$refs.searchResult[++this.selectedSearchResIndex].className = 'selected'; 
+                    }
+                }
+            }
+            else if (event.which === 38) {
+
             }
         },
         handleInput: function(event) {

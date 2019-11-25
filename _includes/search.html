@@ -26,9 +26,13 @@
             <ul v-else>
                 <li class="search-result" 
                     v-for="post in filteredPosts"
-                    ref="searchResult"
                     >
-                    <a v-bind:href="post.url" v-text="post.title"></a>
+                    <a
+                        v-bind:href="post.url"
+                        v-text="post.title"
+                        ref="searchResult"
+                    >
+                    </a>
                 </li>
             </ul>
         </div>
