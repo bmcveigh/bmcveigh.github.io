@@ -1,3 +1,52 @@
+const worker = {
+    provideUpDownArrowFunctionality: function(vueInstance) {
+        let text = '';
+
+         // Highlight next item if down arrow key pressed.
+         if (event.which === 40) {
+            // Numeric value to see if there is another row after the selected one.
+            const nextIndex = vueInstance.selectedSearchResIndex + 1;
+
+            if (vueInstance.$refs.searchResult && vueInstance.$refs.searchResult.length) {
+                if (vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex] &&
+                    vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].className === ''
+                ) {
+                    vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].className = 'selected';
+                    text = vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].text;
+                }
+                else if (vueInstance.$refs.searchResult[nextIndex]) {
+                    vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].className = '';
+                    vueInstance.$refs.searchResult[++vueInstance.selectedSearchResIndex].className = 'selected';
+                    text = vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].text;
+                }
+
+               
+            }
+        }
+        // Highlight next item if up arrow key pressed.
+        else if (event.which === 38) {
+            if (vueInstance.$refs.searchResult && vueInstance.$refs.searchResult.length) {
+                const prevIndex = vueInstance.selectedSearchResIndex - 1;
+                
+                if (vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex] && vueInstance.$refs.searchResult[prevIndex]) {
+                    vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].className = '';
+                    vueInstance.$refs.searchResult[--vueInstance.selectedSearchResIndex].className = 'selected';
+                    text = vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].text;
+                }
+            }
+        }
+        // If the user selects the Enter key, go to the page they have selected.
+        else if (event.which === 13) {
+            window.location = document.querySelector('.search-results a.selected').href;
+        }
+        // Update the search input field value if a search result option was selected.
+        if (text.length) {
+            vueInstance.keywords = text;
+            vueInstance.$refs.search.value = text;
+        }
+    }
+};
+
 /**
  * Use VueJS to make the search functionality interactive.
  */
@@ -39,50 +88,7 @@ new Vue({
                 this.filteredPosts = this.posts;
             }
 
-            let text = '';
-
-            // Highlight next item if down arrow key pressed.
-            if (event.which === 40) {
-                // Numeric value to see if there is another row after the selected one.
-                const nextIndex = this.selectedSearchResIndex + 1;
-
-                if (this.$refs.searchResult && this.$refs.searchResult.length) {
-                    if (this.$refs.searchResult[this.selectedSearchResIndex] &&
-                        this.$refs.searchResult[this.selectedSearchResIndex].className === ''
-                    ) {
-                        this.$refs.searchResult[this.selectedSearchResIndex].className = 'selected';
-                        text = this.$refs.searchResult[this.selectedSearchResIndex].text;
-                    }
-                    else if (this.$refs.searchResult[nextIndex]) {
-                        this.$refs.searchResult[this.selectedSearchResIndex].className = '';
-                        this.$refs.searchResult[++this.selectedSearchResIndex].className = 'selected';
-                        text = this.$refs.searchResult[this.selectedSearchResIndex].text;
-                    }
-
-                   
-                }
-            }
-            // Highlight next item if up arrow key pressed.
-            else if (event.which === 38) {
-                if (this.$refs.searchResult && this.$refs.searchResult.length) {
-                    const prevIndex = this.selectedSearchResIndex - 1;
-                    
-                    if (this.$refs.searchResult[this.selectedSearchResIndex] && this.$refs.searchResult[prevIndex]) {
-                        this.$refs.searchResult[this.selectedSearchResIndex].className = '';
-                        this.$refs.searchResult[--this.selectedSearchResIndex].className = 'selected';
-                        text = this.$refs.searchResult[this.selectedSearchResIndex].text;
-                    }
-                }
-            }
-            // If the user selects the Enter key, go to the page they have selected.
-            else if (event.which === 13) {
-                window.location = document.querySelector('.search-results a.selected').href;
-            }
-            // Update the search input field value if a search result option was selected.
-            if (text.length) {
-                this.keywords = text;
-                this.$refs.search.value = text;
-            }
+            worker.provideUpDownArrowFunctionality(this);
         },
         handleInput: function(event) {
             this.keywords = event.target.value.toLowerCase();
