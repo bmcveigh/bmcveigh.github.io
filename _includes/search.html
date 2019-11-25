@@ -12,7 +12,7 @@
                 type="text"
                 placeholder="Enter keywords..."
                 v-on:keydown="handleKeyDown"
-                v-on:keyup="handleKeyUp"
+                v-on:input="handleKeyUp"
                 autofocus
             />
         </form>
@@ -26,6 +26,7 @@
             <ul v-else>
                 <li class="search-result" 
                     v-for="post in filteredPosts"
+                    ref="searchResult"
                     >
                     <a v-bind:href="post.url" v-text="post.title"></a>
                 </li>

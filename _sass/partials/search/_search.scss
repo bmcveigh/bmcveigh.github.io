@@ -57,9 +57,15 @@
                 border-bottom: 1px solid #fff;
                 width: inherit;
 
+                &:focus {
+                    background: $color-red;
+                }
+
                 a {
                     color: $color-white;
                     text-transform: none;
+                    padding: inherit;
+                    width: 100%;
                 }
             }
         }
