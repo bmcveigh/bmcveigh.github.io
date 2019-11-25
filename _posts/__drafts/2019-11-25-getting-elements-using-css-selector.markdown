@@ -2,6 +2,7 @@
 type: tutorial
 title: Getting elements using a CSS selector (not jQuery)
 category: tutorials javascript
+description: Learn how to get a DOM element via a CSS selector without using jQuery.
 difficulty: Beginner
 date:   2019-11-25 17:53:00 -0500
 tags: 
