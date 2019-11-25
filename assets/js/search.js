@@ -74,6 +74,11 @@ new Vue({
                     }
                 }
             }
+            // If the user selects the Enter key, go to the page they have selected.
+            else if (event.which === 13) {
+                window.location = document.querySelector('.search-results a.selected').href;
+            }
+            // Update the search input field value if a search result option was selected.
             if (text.length) {
                 this.keywords = text;
                 this.$refs.search.value = text;
