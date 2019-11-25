@@ -45,16 +45,26 @@
         left: 5%;
         width: 90%;
 
-         .search-result {
-            padding: 20px;
-            border-bottom: 1px solid #fff;
-            width: inherit;
+        ul {
+            padding-inline-start: 0;
 
-            a {
-                color: $color-white;
-                text-transform: none;
+            .search-result {
+                &::before {
+                    content: '';
+                }
+
+                padding: 20px;
+                border-bottom: 1px solid #fff;
+                width: inherit;
+
+                a {
+                    color: $color-white;
+                    text-transform: none;
+                }
             }
         }
+
+        
     }
    
 }

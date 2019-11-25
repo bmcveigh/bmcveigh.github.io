@@ -17,17 +17,19 @@
             />
         </form>
         <div class="search-results">
-            <div class="search-result" 
-                v-for="post in filteredPosts"
-                >
-                <a v-bind:href="post.url" v-text="post.title"></a>
-            </div>
             <div v-if="!filteredPosts.length && keywords.length">
                 <h3>No results found.</h3>
             </div>
             <div v-else-if="!filteredPosts.length && !keywords.length">
                 <h3>Results will show up here as you type.</h3>
             </div>
+            <ul v-else>
+                <li class="search-result" 
+                    v-for="post in filteredPosts"
+                    >
+                    <a v-bind:href="post.url" v-text="post.title"></a>
+                </li>
+            </ul>
         </div>
     </div>
 </span>
