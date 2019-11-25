@@ -49,22 +49,29 @@
             padding-inline-start: 0;
 
             .search-result {
+                position: relative;
+
                 &::before {
                     content: '';
                 }
 
-                padding: 20px;
                 border-bottom: 1px solid #fff;
                 width: inherit;
+                height: 75px;
 
                 a {
+                    position: absolute;
+                    top: 0;
                     color: $color-white;
+                    display: block;
                     text-transform: none;
                     padding: inherit;
                     width: 100%;
+                    height: inherit;
 
                     &.selected {
                         background: $color-red;
+                        height: inherit;
                     }
                 }
             }
