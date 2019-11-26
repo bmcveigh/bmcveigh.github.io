@@ -11,10 +11,7 @@
           {{ content }}
           {% include post_navigation.html %}
       </div>
-
-      <footer>
-          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-      </footer>
+      {% include footer.html %}
     </div>
   </body>
 </html>
