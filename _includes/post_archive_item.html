@@ -1,0 +1,27 @@
+{% capture post_date %}
+        {{ post.date | date: '%B %Y' }}
+    {% endcapture %}
+    {% if group_date != post_date %}
+        <h3>{{ post_date }}</h3>
+    {% endif %}
+    {% capture group_date %}
+        {{ post.date | date: '%B %Y' }}
+    {% endcapture %}
+    <div class="item">
+        <span class="title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </span>
+        <hr />
+        {% assign d = post.date | date: "%-d"  %}
+        {{ page.date | date: "%B" }} 
+        {% case d %}
+            {% when '1' or '21' or '31' %}
+                {{ d }}st
+            {% when '2' or '22' %}
+                {{ d }}nd
+            {% when '3' or '23' %}
+                {{ d }}rd
+            {% else %}
+                {{ d }}th
+        {% endcase %}
+    </div>
