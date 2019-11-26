@@ -22,11 +22,13 @@
     }
 
     .search-field-wrap {
+        // Search icon (magnifying glass).
         .fa {
             position: absolute;
             left: 0;
             top: 70px;
             left: 25px;
+            z-index: 1;
         }
 
         input[type="text"] {
