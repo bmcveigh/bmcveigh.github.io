@@ -4,4 +4,12 @@ title:  "What is: Artificial Intelligence"
 date:   2019-11-26 07:22:00 -0500
 categories: posts ai
 ---
-Lorem ipsum
+**Artificial Intelligence (AI)** basically means when computers can think on their own.
+When you think about this, it is terrifying. If machines have the ability to think on
+their own, they could control the world one day. I think it all depends on the intent
+AI developers have. If they program the AI to help society, AI could be a really good
+thing. However, if the developers have malicious intent, this could be a really bad thing.
+I'm hoping that AI developers develop for the good.
+
+So how do I know if I'm using AI? Chances are, you have already been using something that
+is AI.
