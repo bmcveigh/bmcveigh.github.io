@@ -1,7 +1,7 @@
 ---
-type: tutorial
+layout: tutorial
 title: Getting elements using a CSS selector (not jQuery)
-category: tutorials javascript
+categories: tutorials javascript
 description: Learn how to get a DOM element via a CSS selector without using jQuery.
 difficulty: Beginner
 date:   2019-11-25 17:53:00 -0500
@@ -22,5 +22,10 @@ buttonElement.click();
 
 Here’s what the HTML would look like, keeping it Vanilla JS:
 {% highlight html %}
+<!-- The button that will be clicked by JS, and maybe by you too. :-) -->
 <button class="my-button" onclick="alert('Hello, world!');">My very special button</button>
 {% endhighlight %}
+
+You can see an example of this in CodePen here: https://codepen.io/bribread22/pen/vYYqJBy.
+Notice how when you load the page, you get the alert pop-up displaying "Hello, world!"
+This means the JavaScript is clicking the button.

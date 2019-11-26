@@ -123,6 +123,11 @@
         .s {
             color: $highlight-string-color;
         }
+
+        // HTML comments.
+        .c {
+            color: $highlight-comments-color;
+        }
     }
    
 }
