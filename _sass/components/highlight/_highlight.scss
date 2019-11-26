@@ -107,6 +107,24 @@
             color: $highlight-keyword-color;
         }
     }
+
+    .language-html {
+         // HTML tags
+        .nt {
+            color: $color-orange;
+        }
+
+        // HTML attributes.
+        .na {
+            color: cyan;
+        }
+
+        // HTML strings.
+        .s {
+            color: $highlight-string-color;
+        }
+    }
+   
 }
 
 // Single line syntax highlighting (e.g. `foo`)
