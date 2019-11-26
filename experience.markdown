@@ -10,24 +10,6 @@ Drupal 7 and Drupal 8; WordPress; Java, PHP, JavaScript; MySQL.
 * Configured and worked with DevOps technologies such as Docker and Jenkins.
 * Used Linux (both CentOS and Ubuntu) hosted on AWS to host Drupal 7/8 and React projects.
 
-#### MetroStar Systems, Full Stack Software Engineer (Open Source), Reston, VA, April 2017 - July 2018
-
-* Developed in Drupal 7 and 8.
-* Used SASS for front-end web development inside a custom theme.
-* Wrote custom Drupal modules as well as maintaining existing ones.
-* Used Drupal Console and Drush for custom module development and maintenance.
-* Worked on an Angular project.
-* Worked with AWS services such as EC2, S3, IAM, and RDS for various projects.
-* Used Acquia Cloud in addition to AWS to host Drupal projects.
-* Used Git for version control. Performed pull requests using Git.
-* Maintained and developed RESTful APIs for the mobile team. Used Swagger as
-documentation.
-* Worked with NodeJS.
-* Used dependency management tools such as npm for JavaScript and composer for PHP.
-* Used Docker and Docksal for LAMP environments.
-* Performed regular backups of production database.
-* Used Linux (both CentOS and Ubuntu) hosted on AWS to host Drupal 7/8 projects.
-
 #### Forum One, Senior Developer, Alexandria, VA, August 2018 - November, 2019
 
 * Developed an interactive model using React and Redux. Used NodeJS as the platform.
@@ -36,7 +18,9 @@ Drupal 7 and Drupal 8; WordPress; Java, PHP, JavaScript; MySQL.
 * Configured and worked with DevOps technologies such as Docker, Vagrant, Buildkite, and
 Jenkins.
 * Used Linux (both CentOS and Ubuntu) hosted on AWS to host Drupal 7/8 and React projects.
-MetroStar Systems, Full Stack Software Engineer (Open Source), Reston, VA, April 2017 - July 2018
+
+#### MetroStar Systems, Full Stack Software Engineer (Open Source), Reston, VA, April 2017 - July 2018
+
 * Developed in Drupal 7 and 8.
 * Used SASS for front-end web development inside a custom theme.
 * Wrote custom Drupal modules as well as maintaining existing ones.
