@@ -21,24 +21,36 @@
         margin-left: 20px;
     }
 
-    input[type="text"] {
-        position: absolute;
-        background: $modal-input-text-bg-color;
-        color: $modal-input-text-color;
-        top: 10%;
-        border: $modal-input-border;
-        position: absolute;
-        margin: 2%;
-
-        &::placeholder {
-            color: $modal-input-placeholder-text-color;
+    .search-field-wrap {
+        .fa {
+            position: absolute;
+            left: 0;
+            top: 70px;
+            left: 25px;
         }
 
-        &:focus {
-            border: $modal-input-focus-border;
-            outline: none;
+        input[type="text"] {
+            position: absolute;
+            background: $modal-input-text-bg-color;
+            color: $modal-input-text-color;
+            top: 35px;
+            border: $modal-input-border;
+            margin: 2%;
+            padding: 0 39px;
+
+            &::placeholder {
+                color: $modal-input-placeholder-text-color;
+            }
+
+            &:focus {
+                border: $modal-input-focus-border;
+                outline: none;
+            }
         }
+
     }
+
+    
 
     .search-results {
         position: absolute;

@@ -7,14 +7,17 @@
         <i class="fa fa-search"></i>
     </a>
     <div class="search-wrap" v-bind:class="{ hidden: !showSearch }">
-        <input
-            type="text"
-            placeholder="Enter keywords..."
-            v-on:keydown="handleKeyDown"
-            v-on:input="handleInput"
-            autofocus
-            ref="search"
-        />
+        <div class="search-field-wrap">
+            <i class="fa fa-search"></i>
+             <input
+                type="text"
+                placeholder="Enter keywords..."
+                v-on:keydown="handleKeyDown"
+                v-on:input="handleInput"
+                autofocus
+                ref="search"
+            />
+        </div>
         <div class="search-results">
             <div v-if="!filteredPosts.length && keywords.length">
                 <h3>No results found.</h3>
