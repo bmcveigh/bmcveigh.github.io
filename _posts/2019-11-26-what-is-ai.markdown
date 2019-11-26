@@ -15,3 +15,6 @@ So how do I know if I'm using AI? Chances are, you have already been using somet
 is AI. If you use any of the following: navigation apps, Siri/Alexa/Cortana, ride sharing
 apps, etc, you have used AI before. If you've ever realized that your mobile device knows
 where you parked without you knowing it, you can thank AI.
+
+How does all this work? It works through a concept called **machine learning**. This uses
+algorithms for the AI to learn new things on its own.
