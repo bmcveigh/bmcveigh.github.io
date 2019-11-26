@@ -11,11 +11,7 @@
             <h2 class="title">{{ page.title }}</h2>
             <div class="metadata">{{ page.date | date: '%B %d, %Y' }} &bull; Tutorial &bull; {{ page.difficulty }}</div>
             <div class="description">{{ page.description }}</div>
-            <div class="tags">
-                {% for category in page.categories %}
-                    <span class="tag">{{ category }}</span>
-                {% endfor %}
-            </div>
+            {% include tags.html %}
             {% if page.prerequisites %}
                 <div class="prerequisites">
                     <h3>Prerequisites</h3>
