@@ -15,10 +15,14 @@ $color-white: #fff;
 $color-red: #E60A00;
 $color-orange: #ff8a00;
 $color-midnight: #001628;
+$color-blue: rgb(26, 115, 187);
 $color-darkblue: rgb(0, 0, 192);
 $color-black: #000;
 $color-gray: rgb(51, 51, 51);
 $color-gray-med: #3b4048;
+
+// Variable colors for the navbar.
+$navbar-link-color: $color-red;
 
 // Variables for tables.
 $table-text-color:      $color-white !default;
@@ -48,8 +52,9 @@ $modal-input-border: 0;
 $modal-input-focus-border: 0;
 $modal-input-placeholder-text-color: lighten($modal-bg-color, 70%) !default;
 
+// Colors for links outside of the navbar.
 $link-color: $color-white;
-$link-hover-color: $color-red;
+$link-hover-color: $navbar-link-color;
 
 $hero-default-bg-color: $color-gray-med;
 

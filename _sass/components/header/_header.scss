@@ -14,7 +14,7 @@
     z-index: 100;
 
     a {
-        color: #fff;
+        color: $navbar-link-color;
     }
 
     .main-menu-list {
@@ -32,6 +32,7 @@
 
             a {
                 @include font-uppercase();
+                color: $navbar-link-color;
 
                 &.search-link {
                     color: $color-white;
