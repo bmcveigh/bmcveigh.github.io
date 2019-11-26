@@ -1,17 +1,25 @@
 //
 // Styling for posts.
 //
-.posts {
-    padding-top: 0;
-
-    .post-title {
-        color:rgb(17, 17, 17);
-        font-size:49.5px;
-        margin-bottom: 10px;
+.post-list {
+    .item {
+        display: flex;
+        align-items: baseline;
+        margin: 0.6em 0em;
+        font-size: 90%;
+    }
+    
+    .title {
+        padding-left: 1em;
+        text-indent: -1em;
     }
 
-    & > .post {
-        padding: 20px 0;
+    hr {
+        border: none;
+        margin: 0 0.75em;
+        border-bottom: 1px dotted $color-white;
+        flex: 1 0 1em;
+        opacity: 0.25;
     }
 }
 
