@@ -2,7 +2,7 @@
 layout: post
 title:  "What is: Drush"
 date:   2019-11-07 17:59:00 -0500
-categories: tutorials drupal
+categories: drupal drush
 ---
 Before we get started, let me describe what drush is: drush (short for Drupal shell) is a popular command line tool designed specifically for Drupal. It can do nearly anything related to the Drupal site like install/uninstall modules, rebuild cache, connect to the database, install a Drupal site from scratch, etc.
 

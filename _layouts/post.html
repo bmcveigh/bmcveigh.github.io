@@ -1,9 +1,19 @@
----
-layout: default
----
-<div class="hero">
-    <h2 class="title">{{ page.title }}</h2>
-    <div class="metadata">{{ page.date | date: '%B %d, %Y' }} &bull; Post</div>
-    {% include tags.html %}
-</div>
-{{ content }}
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+<body>
+    <div class="container">
+        {% include navbar.html %}
+        <div class="hero">
+            <h2 class="title">{{ page.title }}</h2>
+            <div class="metadata">{{ page.date | date: '%B %d, %Y' }} &bull; Blog Post</div>
+            {% include tags.html %}
+        </div>
+        <div id="content">
+            {{ content }}
+        </div>
+    </div>
+</body>
+</html>
