@@ -51,3 +51,6 @@ services:
     volumes:
       - .:/srv/jekyll
 {% endhighlight %}
+
+Now that you have content in the docker-compose.yml file, it's time to attempt to spin
+up the containers listed in that file. To do this, run the command `docker-compose up`.
