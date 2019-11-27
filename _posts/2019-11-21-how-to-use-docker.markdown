@@ -13,9 +13,9 @@ resources:
           file_type: zip
   - title: Docker Example Jekyll Solution (Incomplete)
     files:
-        - url: '#'
+        - url: /assets/files/docker-example-jekyll/docker-example-jekyll-solution.tar.gz
           file_type: tar.gz
-        - url: '#'
+        - url: /assets/files/docker-example-jekyll/docker-example-jekyll-solution.zip
           file_type: zip
 ---
 Docker is a great tool for running your applications both locally and remote environments, including
