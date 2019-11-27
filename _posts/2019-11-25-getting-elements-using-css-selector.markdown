@@ -26,6 +26,6 @@ Here’s what the HTML would look like, keeping it Vanilla JS:
 <button class="my-button" onclick="alert('Hello, world!');">My very special button</button>
 {% endhighlight %}
 
-You can see an example of this in CodePen here: https://codepen.io/bribread22/pen/vYYqJBy.
+You can see an example of this in CodePen [here](https://codepen.io/bribread22/pen/vYYqJBy).
 Notice how when you load the page, you get the alert pop-up displaying "Hello, world!"
 This means the JavaScript is clicking the button.
