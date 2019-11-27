@@ -4,6 +4,19 @@ title:  "How to: Use Docker"
 date:   2019-11-21 09:53:59 -0500
 categories: tutorials docker
 difficulty: Beginner
+resources:
+  - title: Docker Example Jekyll Source Code Exercise
+    files:
+        - url: /assets/files/docker-example-jekyll/docker-example-jekyll-start.tar.gz
+          file_type: tar.gz
+        - url: /assets/files/docker-example-jekyll/docker-example-jekyll-start.zip
+          file_type: zip
+  - title: Docker Example Jekyll Solution (Incomplete)
+    files:
+        - url: #
+          file_type: tar.gz
+        - url: #
+          file_type: zip
 ---
 Docker is a great tool for running your applications both locally and remote environments, including
 Production. This tutorial will show you how you can use Docker for your
@@ -54,3 +67,7 @@ services:
 
 Now that you have content in the docker-compose.yml file, it's time to attempt to spin
 up the containers listed in that file. To do this, run the command `docker-compose up`.
+
+The Docker containers should be running now. To verify this, open a new tab in your terminal
+and enter `docker ps`. This will show all of your running Docker containers. Assuming your container
+is running, you will see at least one container running.

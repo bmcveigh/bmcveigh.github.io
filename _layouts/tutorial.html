@@ -24,6 +24,28 @@
                     </ul>
                 </div>
             {% endif %}
+            {% if page.resources %}
+                <div class="resources">
+                    <h3>Resources</h3>
+                    {% for resource in page.resources %}
+                        <div class="resource">
+                            <span class="title">
+                                {{ resource.title }}:
+                            </span>
+                            {% if resource.files %}
+                                <ul class="files">
+                                    {% for resource in resource.files %}
+                                        <li class="file">
+                                            <a href="{{ resource.url }}">{{ resource.file_type }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </div>
+                        
+                    {% endfor %}
+                </div>
+            {% endif %}
         </div>
 
         <div id="content">

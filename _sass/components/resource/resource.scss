@@ -1,0 +1,31 @@
+//
+// Resource styling for tutorials. These are files.
+//
+
+.resources {
+
+    .resource {
+        margin-left: 20px;
+
+        &::before {
+            content: "\2666";
+            color: $color-red;
+            margin-right: 10px;
+        }
+
+        ul.files {
+            display: inline;
+            padding-inline-start: 0;
+
+            > li.file {
+                display: inline;
+
+                &::before {
+                    content: '';
+                }
+            }
+        }
+
+    }
+
+}
