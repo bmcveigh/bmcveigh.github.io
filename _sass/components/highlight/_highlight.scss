@@ -129,6 +129,18 @@
             color: $highlight-comments-color;
         }
     }
+
+    .language-bash {
+         // Bash comments.
+         .c {
+            color: $highlight-comments-color;
+        }
+
+        // Bash commands.
+        .nb {
+            color: $color-orange;
+        }
+    }
    
 }
 
