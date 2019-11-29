@@ -14,7 +14,7 @@ Once you’ve verified that the directory exists, time to create the custom modu
 
 Once you have created the custom directory, we need to add what Drupal calls an `info` file. This file lets Drupal know information about the module, such as the module display name, the description, what version of Drupal to use, and any dependencies the module may have. To create the info file, create a new file called `hello_world.info.yml`. In that file, add the following code:
 
-{% highlight yaml linenos %}
+{% highlight yaml %}
 name: Hello World
 description: This is a simple module which displays the text "Hello, world!".
 type: module
@@ -29,7 +29,7 @@ Now that we’ve done that, if you go to `/admin/modules`, you should see the mo
 
 Great, we’ve added the custom module, so let’s now let’s create a page called "Hello, World!". We will need to create a controller class to do this. In the hello_world module, create a directory called `src/Controller`. Inside the controller directory, create a PHP class called `HelloWorldController.php`. Your controller class should look like this:
 
-{% highlight php linenos %}
+{% highlight php %}
 <?php
  
 namespace Drupal\hello_world\Controller;
@@ -53,7 +53,7 @@ class HelloWorldController extends ControllerBase {
 
 Once you have created that file, you will need to add a file called `hello_world.routing.yml`. In that file, add the following lines of code:
 
-{% highlight yaml linenos %}
+{% highlight yaml %}
 hello_world.get:
   path: '/hello-world'
   defaults:
