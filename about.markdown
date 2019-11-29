@@ -10,7 +10,7 @@ My name is Brian McVeigh. I am a Web Developer specializing in Drupal 7/8 and Ja
 ## My Education
 
 - **Information Technology (Bachelor of Science)**, George Mason University, 2013
-- **Business Administration (Associate of Science)**, Northern Virginia Community College, 2013
+- **Business Administration (Associate of Science)**, Northern Virginia Community College, 2010
 
 ## Work Experience
 
