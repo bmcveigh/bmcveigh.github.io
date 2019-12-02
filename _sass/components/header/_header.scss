@@ -43,3 +43,25 @@
     }
     
 }
+
+@media screen and (max-width: 800px) {
+    .masthead {
+        .mobile__hamburger {
+            position: absolute;
+            right: 48px;
+            top: 32%;
+            z-index: 110;
+            width: 25px;
+            height: 25px;
+
+            .meat {
+                border-bottom: 1px solid $color-white;
+                height: 7px;
+            }
+        }
+
+        .main-menu-list {
+            display: none;
+        }
+    }
+}
