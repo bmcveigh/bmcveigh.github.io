@@ -32,6 +32,12 @@ custom_config:
   messages:
     post_index_message: When life gives you lemons, make lemonade...
 
+# Disqus Comments
+disqus:
+  # Leave shortname blank to disable comments site-wide.
+  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+  shortname: bmcveigh
+
 # Build settings
 # theme: minima
 plugins:
