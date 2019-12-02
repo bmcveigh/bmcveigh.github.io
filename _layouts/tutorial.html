@@ -1,57 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  {% include head.html %}
-
-<body>
-    <div class="container">
-        {% include navbar.html %}
-
-        <div class="tutorial-information hero">
-            <h2 class="title">{{ page.title }}</h2>
-            <div class="metadata">{{ page.date | date: '%B %d, %Y' }} &bull; Tutorial &bull; {{ page.difficulty }}</div>
-            <div class="description">{{ page.description }}</div>
-            {% include tags.html %}
-            {% if page.prerequisites %}
-                <div class="prerequisites">
-                    <h3>Prerequisites</h3>
-                    <ul>
-                        {% for prereq in page.prerequisites %}
-                        <li>
-                            <a href="{{ prereq.url }}">{{ prereq.title }}</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            {% endif %}
-            {% if page.resources %}
-                <div class="resources">
-                    <h3>Resources</h3>
-                    {% for resource in page.resources %}
-                        <div class="resource">
-                            <span class="title">
-                                {{ resource.title }}:
-                            </span>
-                            {% if resource.files %}
-                                <ul class="files">
-                                    {% for resource in resource.files %}
-                                        <li class="file">
-                                            <a href="{{ resource.url }}">{{ resource.file_type }}</a>
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                            {% endif %}
-                        </div>
-                        
-                    {% endfor %}
-                </div>
-            {% endif %}
+---
+layout: default
+---
+<div class="tutorial-information hero">
+    <h2 class="title">{{ page.title }}</h2>
+    <div class="metadata">{{ page.date | date: '%B %d, %Y' }} &bull; Tutorial &bull; {{ page.difficulty }}</div>
+    <div class="description">{{ page.description }}</div>
+    {% include tags.html %}
+    {% if page.prerequisites %}
+        <div class="prerequisites">
+            <h3>Prerequisites</h3>
+            <ul>
+                {% for prereq in page.prerequisites %}
+                <li>
+                    <a href="{{ prereq.url }}">{{ prereq.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
-
-        <div id="content">
-            {{ content }}
-            {% include post_navigation.html %}
+    {% endif %}
+    {% if page.resources %}
+        <div class="resources">
+            <h3>Resources</h3>
+            {% for resource in page.resources %}
+                <div class="resource">
+                    <span class="title">
+                        {{ resource.title }}:
+                    </span>
+                    {% if resource.files %}
+                        <ul class="files">
+                            {% for resource in resource.files %}
+                                <li class="file">
+                                    <a href="{{ resource.url }}">{{ resource.file_type }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+                
+            {% endfor %}
         </div>
-    </div>
-</body>
-</html>
+    {% endif %}
+</div>
+{% include content.html %}

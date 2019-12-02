@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  {% include head.html %}
-
-<body>
-    <div class="container">
-        {% include navbar.html %}
-        <div class="hero">
-            <h2 class="title">{{ page.title }}</h2>
-            <div class="metadata">{{ page.date | date: '%B %d, %Y' }} &bull; Blog Post</div>
-            {% include tags.html %}
-        </div>
-        <div id="content">
-            {{ content }}
-            {% include post_navigation.html %}
-            {% if site.disqus.shortname %}
-             {% include disqus_comments.html %}
-            {% endif %}
-        </div>
-        {% include footer.html %}
-    </div>
-</body>
-</html>
+---
+layout: default
+---
+<div class="hero">
+    <h2 class="title">{{ page.title }}</h2>
+    <div class="metadata">{{ page.date | date: '%B %d, %Y' }} &bull; Blog Post</div>
+    {% include tags.html %}
+</div>
+{% include content.html %}

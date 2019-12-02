@@ -5,13 +5,9 @@
 
   <body>
     <div class="container">
-      {% include navbar.html %}
-
-      <div id="content">
-          {{ content }}
-          {% include post_navigation.html %}
-      </div>
-      {% include footer.html %}
+        {% include navbar.html %}
+        {{ content }}
+        {% include footer.html %}
     </div>
   </body>
 </html>
