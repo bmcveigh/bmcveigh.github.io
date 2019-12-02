@@ -13,4 +13,5 @@ the morning to go to the gym. I find it easy to wake up early for the gym when y
 do so. In my case, I feel motivated because I want to maintain a healthy weight and also because the
 gym I go to is really nice. I workout at Equinox. They have a great selection of classes and
 their amenities are plentiful. They have a good selection of classes, which are all included in the
-membership.
+membership. One of my favorite amenities they have are their cold eucalyptus towels, which feel great
+around my neck, especially after a good run on the treadmill.
