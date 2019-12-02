@@ -13,12 +13,22 @@
         }
     }
 
-    .prev {
-        position: absolute;
-        right: 0;
+    @media screen and (min-width: 800px) {
+        .prev {
+            position: absolute;
+            right: 0;
+        }
+        .next {
+            position: absolute;
+            left: 0;
+        }
     }
-    .next {
-        position: absolute;
-        left: 0;
+
+    @media screen and (max-width: 800px) {
+        line-height: 24px;
+
+        .prev {
+            margin-bottom: 20px;
+        }
     }
 }
