@@ -84,6 +84,7 @@
 
         a {
             @include font-uppercase();
+            color: $color-white;
         }
 
         &.active {
