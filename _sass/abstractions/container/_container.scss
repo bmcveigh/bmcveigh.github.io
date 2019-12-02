@@ -1,6 +1,10 @@
 .container {
     position: relative;
 
+    img {
+        width: 100%;
+    }
+
     @media screen and (max-width: 800px) {
         margin: 100px 20px 0 20px;
 
@@ -14,10 +18,6 @@
             max-width: 80%;
             margin: 100px 10% 0 10%;
             padding: 0 80px;
-
-            img {
-                width: 100%;
-            }
         }
     }
     
