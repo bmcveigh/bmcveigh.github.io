@@ -80,6 +80,7 @@
         left: 0;
         padding-inline-start: 0;
         background: rgba(0, 0, 0, 0.9);
+        z-index: 110;
 
         a {
             @include font-uppercase();
