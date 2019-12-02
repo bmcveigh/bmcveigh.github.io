@@ -1,19 +1,40 @@
-<header class="masthead">
-    <h3 class="masthead-title">
-        <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
-    </h3>
-    <small>{{ site.tagline }}</small>
-    <span class="mobile__hamburger">
-        <div class="meat"></div>
-        <div class="meat"></div>
-        <div class="meat"></div>
-    </span>
-    <ul class="main-menu-list">
+<div id="mainMenu">
+    <header class="masthead">
+        <h3 class="masthead-title">
+            <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
+        </h3>
+        <small>{{ site.tagline }}</small>
+        <div class="mobile__hamburger" v-on:click="handleHamburgerClick">
+            <div class="meat"></div>
+            <div class="meat"></div>
+            <div class="meat"></div>
+        </div>
+        <ul class="main-menu-list">
+            {% for item in site.data.mainmenulist.docs %}
+                <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+            <li>
+                {% include search.html %}
+            </li>
+        </ul>
+    </header>
+    <ul class="main-menu-list-mobile" v-bind:class="{ active: isActive }">
         {% for item in site.data.mainmenulist.docs %}
             <li><a href="{{ item.url }}">{{ item.title }}</a></li>
         {% endfor %}
-        <li>
-           {% include search.html %}
-        </li>
     </ul>
-</header>
+</div>
+
+<script>
+new Vue({
+    el: '#mainMenu',
+    data: {
+        isActive: false,
+    },
+    methods: {
+        handleHamburgerClick: function(event) {
+            this.isActive = !this.isActive;
+        },
+    }
+});
+</script>
