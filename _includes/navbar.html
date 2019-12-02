@@ -4,7 +4,7 @@
             <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
         </h3>
         <small>{{ site.tagline }}</small>
-        <div class="mobile__hamburger" v-on:click="handleHamburgerClick">
+        <div class="mobile__hamburger" onclick="handleHamburgerClick();">
             <div class="meat"></div>
             <div class="meat"></div>
             <div class="meat"></div>
@@ -26,15 +26,11 @@
 </div>
 
 <script>
-new Vue({
-    el: '#mainMenu',
-    data: {
-        isActive: false,
-    },
-    methods: {
-        handleHamburgerClick: function(event) {
-            this.isActive = !this.isActive;
-        },
+    /**
+     * Expand and collapse the mobile menu when the hamburger div is clicked.
+     */
+    const handleHamburgerClick = () => {
+        const mainMenu = document.querySelector('.main-menu-list-mobile');
+        mainMenu.classList.toggle('active');
     }
-});
 </script>
