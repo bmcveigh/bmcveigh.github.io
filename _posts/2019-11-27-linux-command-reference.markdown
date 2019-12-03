@@ -10,11 +10,14 @@ tags:
 Below are a list of Linux commands that I find useful:
 
 {% highlight bash %}
-# Zip a tarball
+# Create a tarball
 tar -cvzf my_tarball.tar.gz /path/to/item/to/compress
 
-# Unzip a tarball
+# Extract a tarball
 tar -xvzf file.tar.gz
+
+# Create a zip file
+zip -r file.zip /path/to/directory
 
 # Sort all processes by memory in descending order
 top -o %MEM
