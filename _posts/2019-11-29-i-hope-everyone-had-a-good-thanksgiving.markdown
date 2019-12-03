@@ -12,9 +12,10 @@ tags:
 I hope everyone had a great Thanksgiving! I hope you got the chance to eat lots of turkey,
 stuffing, pumpkin pie, etc.
 
-About my Thanksgiving: I spent my Thanksgiving at my parent's house and gotthe opportunity
-to eat all of the above foods. I also had another kind of pie that is outside the traditional
-Thanksgiving pie, which has a southern flair to it called Chocolate Chess Pie. In my opinion,
+About my Thanksgiving: I spent my Thanksgiving at my parent's house with my wife and
+got the opportunity to eat all of the above foods. I also had another kind of pie that is
+outside the traditional Thanksgiving pie, which has a southern flair to it called
+Chocolate Chess Pie. In my opinion,
 and probably yours too (assuming you like chocolate like I do), it was delicious. This was the
 first time I have ever had this kind of pie. Here's a picture of what it looks like:
 
