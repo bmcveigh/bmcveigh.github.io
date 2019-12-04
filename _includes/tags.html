@@ -1,5 +1,7 @@
-<div class="tags">
-    {% for category in page.categories %}
-        <span class="tag">{{ category }}</span>
-    {% endfor %}
-</div>
+{% if page.tags %}
+    <div class="tags">
+        {% for tag in page.tags %}
+            <span class="tag">{{ tag }}</span>
+        {% endfor %}
+    </div>
+{% endif %}
