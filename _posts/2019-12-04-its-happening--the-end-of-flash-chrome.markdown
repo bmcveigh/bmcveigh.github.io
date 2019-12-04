@@ -11,6 +11,6 @@ tags:
 ![Chrome Flash EOL](/assets/img/chromeFlashNoLongerSupported.PNG)
 
 I could see this coming after all of the vulnerabilities that were discovered with Flash.
-On November 20, 2019, Chrome will no longer support Flash. This could cause major disruption
+Sometime in December 2020, Chrome will no longer support Flash. This could cause major disruption
 to many applications that use Flash, but I think it definitely makes sense for Google to
 discontinue Flash.
