@@ -6,4 +6,8 @@
     .set-1, .set-5 {
         @include tag();
     }
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
 }

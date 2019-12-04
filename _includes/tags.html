@@ -1,13 +1,13 @@
 {% if page.tags %}
     <div class="tags">
         {% for tag in page.tags %}
-            <a href="/tag/{{ tag }}" class="tag">{{ tag }}</a>
+            <a href="/tag/{{ tag | slugify }}" class="tag">{{ tag }}</a>
         {% endfor %}
     </div>
 {% else if post.tags %}
     <span class="tags">
         {% for tag in post.tags %}
-            <a href="/tag/{{ tag }}" class="tag">{{ tag }}</a>
+            <a href="/tag/{{ tag | slugify }}" class="tag">{{ tag }}</a>
         {% endfor %}
     </span>
 {% endif %}

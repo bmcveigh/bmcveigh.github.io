@@ -19,6 +19,10 @@
   text-decoration: none;
   font-size: 15px;
 
+  &:hover {
+    color: $color-white;
+  }
+
   &::before {
     background: $color-white;
     border-radius: 10px;
