@@ -1,5 +1,7 @@
 #tag-cloud {
     width: 50%;
+    height: inherit;
+    overflow-y: auto;
 
     .set-1, .set-5 {
         @include tag();

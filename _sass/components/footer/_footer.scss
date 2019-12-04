@@ -3,11 +3,19 @@
 //
 
 footer {
+    position: relative;
     width: 85%;
     padding-top: 20px;
     padding-right: 20px;
 
+    #tag-cloud {
+        position: absolute;
+        left: 0;
+    }
+
     .copyright {
-        text-align: right;
+        position: absolute;
+        right: 15%;
+        bottom: 0;
     }
 }
