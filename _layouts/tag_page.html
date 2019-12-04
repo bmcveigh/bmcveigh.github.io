@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<div id="content">
+    <span class="tag">{{ page.tag }}</span>
+    {% for post in page.posts %}
+        <div class="post-list">
+            {% include post_archive_item.html %}
+        </div>
+    {% endfor %}
+</div>

@@ -3,6 +3,8 @@ layout: post
 title:  "How to: Creating a custom module in Drupal 8"
 date:   2019-11-06 12:00:59 -0500
 categories: tutorials drupal
+tags:
+  - Drupal
 ---
 Creating a custom module in Drupal 8 can be as simple as creating only one file (even though that’s never a practical solution), so let’s get started.
 

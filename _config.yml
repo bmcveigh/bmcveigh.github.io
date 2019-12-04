@@ -76,3 +76,9 @@ sass:
   sass_dir:          _sass
   style:            compressed
 css_dir: css
+
+# Tagging
+tag_page_layout: tag_page
+tag_page_dir: tag
+# tag_feed_layout: tag_feed
+# tag_feed_dir: tag

@@ -3,6 +3,10 @@ layout: post
 title:  "What is: Artificial Intelligence"
 date:   2019-11-26 07:22:00 -0500
 categories: posts ai
+tags:
+  - Artificial Intelligence
+  - Machine Learning
+  - Robots
 ---
 **Artificial Intelligence (AI)** basically means when computers can think on their own.
 When you think about this, it is terrifying. If machines have the ability to think on
