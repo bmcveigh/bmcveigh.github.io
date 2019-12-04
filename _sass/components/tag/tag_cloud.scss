@@ -1,0 +1,7 @@
+#tag-cloud {
+    width: 50%;
+
+    .set-1, .set-5 {
+        @include tag();
+    }
+}
