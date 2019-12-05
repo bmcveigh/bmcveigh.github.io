@@ -1,0 +1,10 @@
+//
+// Styling overrides for fontawesome.
+//
+.fa {
+    
+    &.fa-info-circle {
+        color: $color-lightblue;
+    }
+
+}
