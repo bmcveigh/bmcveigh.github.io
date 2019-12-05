@@ -7,10 +7,6 @@
 
     a {
         @include font-uppercase(16px, $link-color);
-
-        &:hover {
-            color: $link-hover-color;
-        }
     }
 
     @media screen and (min-width: 800px) {
