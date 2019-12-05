@@ -6,14 +6,13 @@ body {
     margin: 0;
     background: $color-gray;
     color: $color-white;
-    font-family: Bitter, sans-serif;
+    font-family: $font-family-roboto;
     font-size: 1.2rem;
 }
 
 a {
     color: $link-color;
     text-decoration: none;
-    font-weight: 700;
 
     &:hover {
         background: lighten($color-gray, 10%);
