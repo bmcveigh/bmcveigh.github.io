@@ -5,7 +5,8 @@ layout: default
     <h3 class="post-index-message">{{ site.custom_config.messages.post_index_message }}</h3>
     <div class="post-list">
         {% for post in site.posts %}
-            {% include post_archive_item.html %}
+            {% include post_feature_item.html %}
         {% endfor %}
     </div>
+    {% include nav_links.html %}
 </div>

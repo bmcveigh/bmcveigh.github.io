@@ -1,0 +1,7 @@
+<ul class="nav-links">
+    {% for nav_link in page.nav_links %}
+        <li>
+            <a href="{{ nav_link.path }}">{{ nav_link.label }}</a>
+        </li>
+    {% endfor %}
+</ul>
