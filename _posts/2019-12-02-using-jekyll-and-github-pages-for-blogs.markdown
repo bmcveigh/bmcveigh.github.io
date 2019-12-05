@@ -39,7 +39,7 @@ bundle exec jekyll serve
 Once you've entered in those commands, navigate to `localhost:4000`. You should now be seeing your Jekyll site.
 You're Jekyll site should look something like this if it is working correctly:
 
-![GitHub Pages Jekyll is Working](/assets/img/githubPagesJekyllIsWorking.png)
+![GitHub Pages Jekyll is Working](/assets/img/githubPagesJekyllIsWorking.PNG)
 
 You also have the ability to run Jekyll on another port, such as 4001. You can do this by adding the `--port` flag,
 like this: `bundle exec jekyll serve --port 4001`.
@@ -75,7 +75,7 @@ git push origin master
 To do this, you will need to go to the Settings page in GitHub and scroll down to where you see GitHub Pages.
 You should see something like the screenshot below.
 
-![GitHub Pages Site Published](/assets/img/githubPagesSitePublished.png).
+![GitHub Pages Site Published](/assets/img/githubPagesSitePublished.PNG).
 
 Once you've done that, navigate to the URL you see. It may take about 20 minutes for GitHub to spin up your site,
 so if you don't see your site right away, that is most likely why you don't see it. It may also be because you
