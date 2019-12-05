@@ -6,7 +6,7 @@ body {
     margin: 0;
     background: $color-gray;
     color: $color-white;
-    font-family: $font-family-roboto;
+    font-family: $font-family-primary;
     font-size: 1.2rem;
 }
 
@@ -31,7 +31,7 @@ p a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $font-family-roboto;
+    font-family: $font-family-primary;
 
     a {
         color: $link-color;

@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap');
-
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
 @mixin font-uppercase($font-size: 18px, $font-color: $color-red) {
-    font-family: $font-family-rubik;
     color: $font-color;
     text-transform: uppercase;
     font-size: $font-size;
