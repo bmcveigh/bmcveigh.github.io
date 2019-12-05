@@ -9,6 +9,7 @@ tags:
  - Jekyll
  - Ruby
  - GitHub Pages
+ - Git
 ---
 Blogging in my opinion is an enjoyable experience; however, there is one thing
 that made blogging kind of difficult to sustain up until now, and that is managing a
