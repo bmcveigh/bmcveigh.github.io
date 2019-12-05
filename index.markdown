@@ -4,7 +4,7 @@
 
 layout: home
 nav_links:
-    - label: 'View all posts'
+    - label: 'View all content'
       path: '/archive'
     - label: 'View tutorials'
       path: '/tutorials'
