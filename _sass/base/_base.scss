@@ -43,14 +43,15 @@ h1, h2, h3, h4, h5, h6 {
  */
 ul {
     list-style: none;
+    margin-left: 20px;
 
     > li:before {
-        content: "\2666";
-        color: $color-red;
+        content: "\25FC";
+        color: $color-lightblue;
         font-weight: bold; /* If you want it to be bold */
         display: inline-block; /* Needed to add space between the bullet and the text */
-        width: 1em; /* Also needed for space (tweak if needed) */
-        margin-left: -1em; /* Also needed for space (tweak if needed) */
+        width: 1.5em; /* Also needed for space (tweak if needed) */
+        margin-left: -2em; /* Also needed for space (tweak if needed) */
     }
 }
 
