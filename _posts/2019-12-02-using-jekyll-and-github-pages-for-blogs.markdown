@@ -7,6 +7,7 @@ difficulty: Intermediate
 tags:
  - Blogging
  - Jekyll
+ - Ruby
  - GitHub Pages
 ---
 Blogging in my opinion is an enjoyable experience; however, there is one thing
