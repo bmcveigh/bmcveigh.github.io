@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-{% include hero.html %}
 <div id="content">
+    {% include hero.html %}
     <div class="post-list">
         {% assign tutorials = site.posts | where: 'layout', 'tutorial' %}
         {% for post in tutorials %}
