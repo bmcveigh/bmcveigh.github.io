@@ -1,12 +1,10 @@
 ---
 layout: default
 ---
-<div id="content">
-    <h3 class="post-index-message">{{ site.custom_config.messages.post_index_message }}</h3>
-    <div class="post-list">
-        {% for post in site.posts limit: site.custom_config.number_of_posts_to_display %}
-            {% include post_feature_item.html %}
-        {% endfor %}
-    </div>
-    {% include nav_links.html %}
+<h3 class="post-index-message">{{ site.custom_config.messages.post_index_message }}</h3>
+<div class="post-list">
+    {% for post in site.posts limit: site.custom_config.number_of_posts_to_display %}
+        {% include post_feature_item.html %}
+    {% endfor %}
 </div>
+{% include nav_links.html %}

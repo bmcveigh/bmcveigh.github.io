@@ -1,11 +1,9 @@
 ---
 layout: default
 ---
-<div id="content">
-    {% include hero.html %}
-    <div class="post-list">
-        {% for post in site.posts %}
-            {% include post_archive_item.html %}
-        {% endfor %}
-    </div>
+{% include hero.html %}
+<div class="post-list">
+    {% for post in site.posts %}
+        {% include post_archive_item.html %}
+    {% endfor %}
 </div>

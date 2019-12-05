@@ -1,13 +1,11 @@
-<div id="content">
-    {% case page.layout %}
-        {% when 'tutorial' %}
-            {% include hero_tutorial.html %}
-        {% when 'post' %}
-            {% include hero.html %}
-    {% endcase %}
-    {{ content }}
-    {% include post_navigation.html %}
-    {% if site.disqus.shortname %}
-        {% include disqus_comments.html %}
-    {% endif %}
-</div>
+{% case page.layout %}
+    {% when 'tutorial' %}
+        {% include hero_tutorial.html %}
+    {% when 'post' %}
+        {% include hero.html %}
+{% endcase %}
+{{ content }}
+{% include post_navigation.html %}
+{% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+{% endif %}

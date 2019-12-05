@@ -1,12 +1,10 @@
 ---
 layout: default
 ---
-<div id="content">
-    {% include hero.html %}
-    <div class="post-list">
-        {% assign tutorials = site.posts | where: 'layout', 'tutorial' %}
-        {% for post in tutorials %}
-            {% include post_archive_item.html %}
-        {% endfor %}
-    </div>
+{% include hero.html %}
+<div class="post-list">
+    {% assign tutorials = site.posts | where: 'layout', 'tutorial' %}
+    {% for post in tutorials %}
+        {% include post_archive_item.html %}
+    {% endfor %}
 </div>
