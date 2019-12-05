@@ -31,6 +31,7 @@ github_username:  bmcveigh
 custom_config:
   messages:
     post_index_message: When life gives you lemons, make lemonade...
+  number_of_posts_to_display: 12
 
 # Disqus Comments
 disqus:
