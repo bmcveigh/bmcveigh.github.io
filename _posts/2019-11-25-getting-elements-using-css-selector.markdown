@@ -9,7 +9,7 @@ tags:
   - Tutorials
   - JavaScript
 ---
-Until recently, I discovered that you can retrieve HTML DOM elements using CSS selectors. This can be done by calling ‘document.querySelector(‘.your-class’)’ in your JS code. Previously, I was using jQuery to do this.
+Until recently, I discovered that you can retrieve HTML DOM elements using CSS selectors. This can be done by calling `document.querySelector('.your-class')` in your JS code. Previously, I was using jQuery to do this.
 
 Here is an example:
 {% highlight javascript %}
