@@ -5,4 +5,5 @@
 layout: archive
 title: Archive
 permalink: /archive/
+description: 'Here is where you will find all of my posts, including my most recent ones.'
 ---

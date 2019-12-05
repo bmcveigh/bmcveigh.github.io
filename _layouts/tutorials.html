@@ -1,10 +1,7 @@
 ---
 layout: default
 ---
-<div class="hero hero-tutorials">
-    <h2 class="title">{{ page.title }}</h2>
-    <div class="description">{{ page.description }}</div>
-</div>
+{% include hero.html %}
 <div id="content">
     <h3 class="post-index-message">{{ site.custom_config.messages.post_index_message }}</h3>
     <div class="post-list">
