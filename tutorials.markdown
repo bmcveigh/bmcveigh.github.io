@@ -5,4 +5,5 @@
 layout: tutorials
 title: Tutorials
 permalink: /tutorials/
+description: 'My public notes on how to do things, which I reference myself as well.'
 ---
