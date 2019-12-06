@@ -1,7 +1,7 @@
 ---
 layout: weekly_review
 title:  "2019 Week 49 Review"
-date:   2019-12-04 10:08:00 -0500
+date:   2019-12-06 10:08:00 -0500
 categories: weekly-review
 tags:
  - Weekly Review
