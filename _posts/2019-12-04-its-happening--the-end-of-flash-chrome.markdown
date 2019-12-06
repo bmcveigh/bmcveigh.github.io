@@ -13,4 +13,4 @@ tags:
 I could see this coming after all of the vulnerabilities that were discovered with Flash.
 Sometime in December 2020, Chrome will no longer support Flash. This could cause major disruption
 to many applications that use Flash, but I think it definitely makes sense for Google to
-discontinue Flash.
+discontinue Flash due to all of the vulnerabilities.
