@@ -25,7 +25,6 @@
         // Search icon (magnifying glass).
         .fa {
             position: absolute;
-            left: 0;
             top: 70px;
             left: 25px;
             z-index: 1;
@@ -67,11 +66,11 @@
         ul {
             padding-inline-start: 0;
 
-            .search-result {
+            li.search-result {
                 position: relative;
 
                 &::before {
-                    content: '';
+                    display: none;
                 }
 
                 border-bottom: 1px solid #fff;
@@ -86,7 +85,6 @@
                     display: block;
                     text-transform: none;
                     padding: inherit;
-                    padding-left: 20px;
                     width: 100%;
                     height: inherit;
 
