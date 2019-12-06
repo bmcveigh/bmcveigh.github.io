@@ -8,6 +8,9 @@
         {% include navbar.html %}
         <div id="content" class="layout-{{ page.layout | slugify }}">
            {{ content }}
+           {% if page.layout != 'page' %}
+             {% include post_navigation.html %}
+           {% endif %}
            {% include footer.html %}
         </div>
     </div>
