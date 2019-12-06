@@ -84,21 +84,21 @@ breakpoints.
 ADG Tech Consulting, LLC, PHP/Drupal Developer, Centreville, VA, Nov. 2014 - July 2015
 * Create and modify PHP code to render HTML content and handle data/perform tasks, table
 less CSS, HTML, forms and scripts.
-* Generated custom forms using Drupal 7’s Form API
-(api.drupal.org/api/drupal/includes%21form.inc/group/form_api/7) and the contributed
-webform module (drupal.org/project/webform).
+* Generated custom forms using
+[Drupal 7’s Form API](https://api.drupal.org/api/drupal/includes%21form.inc/group/form_api/7)
+and the [contributed webform module](https://drupal.org/project/webform).
 * Wrote custom MySQL database scripts to create tables and populate data. Worked on an
 InnoDB storage engine because of its transactional capability.
 * Implemented Drupal 7’s database abstraction layer to dynamically create Database
 Manipulation Language (DML) queries such as db_select, drupal_write_record, db_insert, and
 db_update Drupal functions. When multiple tables were needed to be joined together, used
-Drupal’s join, innerJoin, and leftJoin functions to build onto the PHP Data Object (PDO)
-(http://php.net/manual/en/book.pdo.php) to construct and execute the query. Used PDO
-functions to grab the results in a certain way such as fetchAll to get an array of result objects,
-fetchAlloc which returns an associative array of the first result, fetchCol one result for one
-column (returns a string).
+Drupal’s join, innerJoin, and leftJoin functions to build onto the
+[PHP Data Object (PDO)](http://php.net/manual/en/book.pdo.php) to construct and execute the
+query. Used PDO functions to grab the results in a certain way such as fetchAll to get an array
+of result objects, fetchAlloc which returns an associative array of the first result,
+fetchCol one result for one column (returns a string).
 * Used MAMP on local machine as source of Apache, MySQL, and PHP.
-* Used the contributed Views module (drupal.org/project/views) to generate custom RSS feeds
+* Used the [contributed Views module](https://drupal.org/project/views) to generate custom RSS feeds
 to XML and to create custom pages or blocks generated from custom database queries.
 * Implemented Drupal’s hook API functions such as hook_schema, hook_init, and hook_menu
 to create custom functionality without modifying the core code.

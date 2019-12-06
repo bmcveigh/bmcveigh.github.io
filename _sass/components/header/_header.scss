@@ -37,6 +37,7 @@
             a {
                 @include font-uppercase();
                 color: $navbar-link-color;
+                text-decoration: none;
 
                 &.search-link {
                     color: $color-white;
