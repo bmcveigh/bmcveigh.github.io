@@ -11,7 +11,7 @@ resources:
           file_type: tar.gz
         - url: /assets/files/docker-example-jekyll/docker-example-jekyll-start.zip
           file_type: zip
-  - title: Docker Example Jekyll Solution (Incomplete)
+  - title: Docker Example Jekyll Solution
     files:
         - url: /assets/files/docker-example-jekyll/docker-example-jekyll-solution.tar.gz
           file_type: tar.gz
