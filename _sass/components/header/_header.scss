@@ -92,7 +92,8 @@
 
         a {
             @include font-uppercase();
-            color: $color-white;
+            color: $navbar-link-color;
+            text-decoration: none;
         }
 
         &.active {
