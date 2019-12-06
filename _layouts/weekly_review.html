@@ -12,7 +12,7 @@ layout: default
     {% endcapture %}
     Below is a summary of one thing on what went well, what did not go well, and what I learned
     for week {{ page.week_number }} in the year {{ page.date | date: '%Y' }}
-    as well as a brief overview of the upcoming plans I have for week {{ next_week_number }}&colon;
+    as well as a brief overview of the upcoming plans I have for week {{ next_week_number | strip }}&colon;
 </p>
 <table>
     <thead>
