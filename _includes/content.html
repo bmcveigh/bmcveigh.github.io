@@ -1,6 +1,11 @@
 {% case page.layout %}
     {% when 'tutorial' %}
         {% include hero_tutorial.html %}
+        {% if page.youtube_videos %}
+            {% for youtube_video in page.youtube_videos %}
+                {% include youtube_video.html %}
+            {% endfor %}
+        {% endif %}
     {% when 'post' %}
         {% include hero.html %}
 {% endcase %}

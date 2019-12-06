@@ -1,0 +1,13 @@
+<div class="youtube-video">
+        <iframe
+        src="http://www.youtube.com/embed/{{ youtube_video.id }}"
+        frameborder="0"
+        allowfullscreen
+    >
+    </iframe>
+    {% if youtube_video.description %}
+        <div class="description">
+            {{ youtube_video.description }}
+        </div>
+    {% endif %}    
+</div>
