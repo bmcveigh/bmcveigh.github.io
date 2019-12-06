@@ -3,8 +3,16 @@ layout: default
 ---
 {% include hero.html %}
 <p>
+    {% capture next_week_number %}
+        {%if page.week_number == 52 %}
+            {{ 1 }}
+        {% else %}
+            {{ page.week_number | plus: 1 }}
+        {% endif %}
+    {% endcapture %}
     Below is a summary of one thing on what went well, what did not go well, and what I learned
-    for week {{ page.week_number }} in the year {{ page.date | date: '%Y' }}&colon;
+    for week {{ page.week_number }} in the year {{ page.date | date: '%Y' }}
+    as well as a brief overview of the upcoming plans I have for week {{ next_week_number }}&colon;
 </p>
 <table>
     <thead>
@@ -25,6 +33,12 @@ layout: default
         <tr>
             <td>What is one thing I learned?</td>
             <td>{{ page.one_thing_learned }}</td>
+        </tr>
+        <tr>
+            <td>What are my plans for the coming week?</td>
+            <td>
+                {{ page.plans_for_coming_week }}
+            </td>
         </tr>
     </tbody>
 </table>

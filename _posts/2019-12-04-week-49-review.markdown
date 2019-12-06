@@ -9,4 +9,5 @@ week_number: 49
 good: 'I got to go to the gym five days this week.'
 bad: 'I had trouble waking up before 5 AM to go to the gym.'
 one_thing_learned: 'I gained more in-depth knowledge on how to use Jekyll.'
+plans_for_coming_week: 'I plan on taking a deeper dive into <a href="https://www.drupal.org/docs/8/core/modules/layout-builder">Layout Builder</a> in Drupal 8. I also plan on continuing to go to the gym.'
 ---
