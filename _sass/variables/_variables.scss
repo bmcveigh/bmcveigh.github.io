@@ -29,7 +29,7 @@ $navbar-link-color: $color-lightblue;
 // Variables for tables.
 $table-text-color:      $color-white !default;
 $table-zebra-color:     $color-gray-med !default;
-$table-header-bg-color: $color-red !default;
+$table-header-bg-color: $color-lightblue !default;
 $table-header-text-color: $color-black !default;
 $table-header-border:   lighten($brand-color, 36%) !default;
 $table-border-color:    $color-black !default;
@@ -63,7 +63,8 @@ $hero-default-bg-color: $color-gray-med;
 // Footer colors.
 $footer-bg-color: $highlight-bg-color;
 
-$tag-bg-color: $color-red;
+$tag-bg-color: $color-lightblue;
+$tag-text-color: $color-black;
 
 $post-date-text-color: $color-red;
 
