@@ -75,9 +75,9 @@ git push origin master
 ### Phase 4: Adding your Jekyll project to GitHub Pages
 
 To do this, you will need to go to the Settings page in GitHub and scroll down to where you see GitHub Pages.
-You should see something like the screenshot below.
+You should see something like the screenshot below:
 
-![GitHub Pages Site Published](/assets/img/githubPagesSitePublished.PNG).
+![GitHub Pages Site Published](/assets/img/githubPagesSitePublished.PNG)
 
 Once you've done that, navigate to the URL you see. It may take about 20 minutes for GitHub to spin up your site,
 so if you don't see your site right away, that is most likely why you don't see it. It may also be because you
