@@ -30,7 +30,7 @@ github_username:  bmcveigh
 # Custom configuration.
 custom_config:
   messages:
-    post_index_message: When life gives you lemons, make lemonade...
+    post_index_message: 'Warning! Content on this blog is subject to change at anytime. Please be advised.'
   number_of_posts_to_display: 12
 
 # Disqus Comments
