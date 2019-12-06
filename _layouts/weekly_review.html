@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% include hero.html %}
+<p>
+    Below is a summary of one thing on what went well, what did not go well, and what I learned
+    for week {{ page.week_number }}&colon; I try to post these reviews every Friday if I get the
+    chance to do so.
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>Question</th>
+            <th>Answer</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>What went well?</td>
+            <td>{{ page.good }}</td>
+        </tr>
+        <tr>
+            <td>What did not go well?</td>
+            <td>{{ page.bad }}</td>
+        </tr>
+        <tr>
+            <td>What is one thing I learned?</td>
+            <td>{{ page.one_thing_learned }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<p class="note">
+    Note: If you don't see an update for the current week, either I'm really busy or
+    I've moved to <a href="https://mars.nasa.gov/">Mars</a>.
+</p>

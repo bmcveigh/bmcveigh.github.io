@@ -1,0 +1,12 @@
+---
+layout: weekly_review
+title:  "Week 49 Review"
+date:   2019-12-04 10:08:00 -0500
+categories: weekly-review
+tags:
+ - Weekly Review
+week_number: 49
+good: 'I got to go to the gym five days this week.'
+bad: 'I had trouble waking up before 5 AM to go to the gym.'
+one_thing_learned: 'I gained more in-depth knowledge on how to use Jekyll.'
+---

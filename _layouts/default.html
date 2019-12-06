@@ -6,7 +6,7 @@
   <body>
     <div class="container">
         {% include navbar.html %}
-        <div id="content">
+        <div id="content" class="layout-{{ page.layout | slugify }}">
            {{ content }}
            {% include footer.html %}
         </div>
