@@ -6,22 +6,29 @@
 
     .resource {
         margin-left: 20px;
+        position: relative;
 
         &::before {
-            content: "\2666";
-            color: $color-red;
-            margin-right: 10px;
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 7px;
+            width: 8px;
+            height: 8px;
+            background: $color-lightblue;
         }
 
         ul.files {
             display: inline;
             padding-inline-start: 0;
+            margin-left: 0;
 
             > li.file {
                 display: inline;
+                margin-left: 5px;
 
                 &::before {
-                    content: '';
+                    display: none;
                 }
             }
         }
