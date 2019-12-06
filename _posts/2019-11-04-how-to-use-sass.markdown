@@ -30,7 +30,7 @@ In the CLI, navigate to the directory you want to install gulp and run:
 
 ### Step 4: Open the gulpfile and paste the code below into the Gulp file.
 
-{% highlight javascript linenos %}
+{% highlight javascript %}
 'use strict';
  
 var gulp = require('gulp');
