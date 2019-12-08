@@ -71,3 +71,6 @@ up the containers listed in that file. To do this, run the command `docker-compo
 The Docker containers should be running now. To verify this, open a new tab in your terminal
 and enter `docker ps`. This will show all of your running Docker containers. Assuming your container
 is running, you will see at least one container running.
+
+Now point your browser to http://localhost:4000 and if everything is working properly, you should see
+a brand new Jekyll site, which is running on the Docker container you just spun up.
