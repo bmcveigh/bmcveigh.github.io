@@ -3,12 +3,11 @@
     <div class="description">{{ page.description }}</div>
     <div class="metadata">
         {% include post_date.html %}
+        {% if page.layout == 'post' %}
+            &bull; {% include read_time.html %}
+        {% endif %}
     </div>
-    {% if page.layout == 'post' %}
-        <div class="metadata">
-            {% include read_time.html %}
-        </div>
-    {% endif %}
+   
     {% if page.tags %}
         {% include tags.html %}
     {% endif %}
