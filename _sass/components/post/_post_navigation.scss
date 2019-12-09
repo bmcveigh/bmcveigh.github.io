@@ -5,6 +5,12 @@
     height: 30px;
     padding: 20px;
 
+    li {
+        &::before {
+            display: none;
+        }
+    }
+
     a {
         @include font-uppercase(16px, $link-color);
         text-decoration: underline;
@@ -24,7 +30,7 @@
     @media screen and (max-width: 800px) {
         line-height: 24px;
 
-        .prev {
+        li {
             margin-bottom: 20px;
         }
     }
