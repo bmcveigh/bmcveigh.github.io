@@ -18,4 +18,73 @@ Make sure to thoroughly test your software before you hand it off to the tech le
 
 Using [git](https://git-scm.com/) to develop software is not only good practice, but it is also useful because it allows you to create new branches and revert your changes.
 
+### When you have repeated code, use either a method or a template.
+
+Try to use functions or HTML templates when you have code or markup that repeats itself. Doing this will make your
+code significantly easier to manage, and will therefore produce less bugs. For instance, in the case of reusable
+templates, instead of this:
+
+{% highlight html %}
+<div class="row">
+    <div class="col">
+        Big fox
+    </div>
+    <div class="col">
+        Small fox
+    </div>
+    <div class="col">
+        Big dog
+    </div>
+    <div class="col">
+        Small dog
+    </div>
+    <div class="col">
+        Big sheep
+    </div>
+    <div class="col">
+        Small sheep
+    </div>
+     <div class="col">
+        You
+    </div>
+     <div class="col">
+        Get
+    </div>
+     <div class="col">
+        The
+    </div>
+     <div class="col">
+        Idea
+    </div>
+</div>
+{% endhighlight %}
+
+you can have this:
+
+**HTML template**
+{% highlight html %}
+{% raw %}
+    <div class="row">
+        <div class="col">
+            {% animal.description %}
+        </div>
+    </div>
+{% endraw %}
+{% endhighlight %}
+
+**Implementation**
+{% highlight html %}
+{% raw %}
+    <div class="row">
+        {% for animal in animals %}
+            <div class="col">
+                {% animal.description %}
+            </div>
+        {% endfor %}
+    </div>
+{% endraw %}
+{% endhighlight %}
+
+### Conclusion
+
 Consistently following all of these concepts may not always be easy, but following these concepts will hopefully make your projects run more smoothly.
