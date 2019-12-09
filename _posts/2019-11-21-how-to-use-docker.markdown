@@ -36,7 +36,7 @@ Once you see the icon, open up your terminal and run the commands `docker -v` an
 installation was successful, you should see versions for each command.
 
 Now that we have the docker commands working, let's navigate to a directory and create a sample project.
-In this example, we will create a docker-compose.yml file to spin up a Jekyll server on port 4000. In the directory
+In this example, we will create a `docker-compose.yml` file to spin up a Jekyll server on port 4000. In the directory
 you want to add this project, enter the following commands:
 
 {% highlight bash %}
@@ -72,5 +72,5 @@ The Docker containers should be running now. To verify this, open a new tab in y
 and enter `docker ps`. This will show all of your running Docker containers. Assuming your container
 is running, you will see at least one container running.
 
-Now point your browser to http://localhost:4000 and if everything is working properly, you should see
-a brand new Jekyll site, which is running on the Docker container you just spun up.
+Now point your browser to `http://localhost:4000` and if everything is working properly, you should
+see a brand new Jekyll site, which is running on the Docker container you just spun up.

@@ -35,6 +35,6 @@ cd my-app
 npm start
 {% endhighlight %}
 
-You may automatically be redirected to http://localhost:3000, which means that the
+You may automatically be redirected to `http://localhost:3000`, which means that the
 created React app is working properly. If it has not automatically taken you there,
 go ahead and point that URL in your browser. Sometimes this happens on Windows machines.
