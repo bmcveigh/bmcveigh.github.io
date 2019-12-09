@@ -14,6 +14,11 @@
     margin: 0 10px 10px 0;
     text-decoration: none;
     font-size: 15px;
+
+    // Make the text smaller for mobile devices.
+    @media screen and (max-width: 800px) {
+      font-size: 13px;
+    }
   }
   
 .tag::before {
