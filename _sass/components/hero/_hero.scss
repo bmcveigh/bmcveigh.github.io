@@ -1,13 +1,25 @@
 .hero {
     background: $hero-default-bg-color;
-    font-family: Bitter, sans-serif;
     padding: 17px 72px;
     min-height: 100px;
     margin-top: 85px;
     
-    .metadata {
-        font-size: 17px;
-        margin-bottom: 20px;
+    ul.metadata {
+        padding-inline-start: 0;
+
+        li {
+            display: inline;
+            margin-left: 0;
+
+            &::before {
+                display: none;
+            }
+            &:not(:last-child)::after {
+                content: '\2022';
+                margin-left: 5px;
+            }
+           
+        }
     }
     .description {
         font-size: 1rem;

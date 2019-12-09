@@ -3,9 +3,11 @@
         <i class="fa fa-info-circle"></i>
         {{ page.title }}
     </h2>
-    <div class="metadata">
-        {% include post_date.html %} &bull; Tutorial &bull; {{ page.difficulty }}
-    </div>
+    <ul class="metadata">
+        <li>{% include post_date.html %}</li>
+        <li>Tutorial</li>
+        <li>{{ page.difficulty }}</li>
+    </ul>
     <div class="description">{{ page.description }}</div>
     {% include tags.html %}
     {% if page.prerequisites %}

@@ -1,12 +1,12 @@
 <div class="hero hero-{{ page.title | slugify}}">
     <h2 class="title">{{ page.title }}</h2>
     <div class="description">{{ page.description }}</div>
-    <div class="metadata">
-        {% include post_date.html %}
+    <ul class="metadata">
+        <li>{% include post_date.html %}</li>
         {% if page.layout == 'post' %}
-            &bull; {% include read_time.html %}
+            <li>{% include read_time.html %}</li>
         {% endif %}
-    </div>
+    </ul>
    
     {% if page.tags %}
         {% include tags.html %}
