@@ -4,6 +4,11 @@
     <div class="metadata">
         {% include post_date.html %}
     </div>
+    {% if page.layout == 'post' %}
+        <div class="metadata">
+            {% include read_time.html %}
+        </div>
+    {% endif %}
     {% if page.tags %}
         {% include tags.html %}
     {% endif %}
