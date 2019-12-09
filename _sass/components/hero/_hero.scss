@@ -3,6 +3,11 @@
     padding: 17px 72px;
     min-height: 100px;
     margin-top: 85px;
+
+    // Lessen the padding for mobile devices.
+    @media screen and (max-width: 800px) {
+        padding: 5px 20px;
+    }
     
     ul.metadata {
         padding-inline-start: 0;
