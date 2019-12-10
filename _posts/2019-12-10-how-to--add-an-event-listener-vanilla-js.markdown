@@ -8,6 +8,11 @@ tags:
   - JavaScript
   - Event Driven Programming
   - Vanilla JavaScript
+resources:
+  - title: CodePen Demo
+    files:
+      - url: https://codepen.io/bribread22/pen/GRgZWZQ
+        file_type: here
 ---
 Adding an event listener in vanilla JavaScript can come in handy,
 especially when you don't want to add in an additional JavaScript
