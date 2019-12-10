@@ -10,3 +10,15 @@
         </li>
     {% endif %}
 </div>
+<ul class="post-navigation-mobile">
+    {% if page.next.url %}
+        <li class="prev-item">
+            <a class="next" href="{{page.next.url}}">&lt;</a>
+        </li>
+    {% endif %}
+    {% if page.previous.url %}
+        <li class="next-item">
+            <a class="prev" href="{{page.previous.url}}">&gt;</a>
+        </li>
+    {% endif %}
+</ul>
