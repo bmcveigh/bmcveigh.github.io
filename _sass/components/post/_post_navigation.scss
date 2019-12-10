@@ -37,15 +37,14 @@
 
     li {
         position: fixed;
-        right: 5%;
         bottom: 5%;
         list-style: none;
         background: $modal-bg-color;
-        width: 32px;
+        width: 35px;
         height: 35px;
         border-radius: 20px;
         padding-left: 6px;
-        padding-top: 3px;
+        padding-top: 5px;
 
         &::before {
             display: none;
