@@ -6,12 +6,30 @@
     // display: none;
     width: 50%;
     height: 400px;
-    overflow-x: hidden;
-    overflow-y: auto;
     left: 20%;
     top: 30%;
     background: $modal-bg-color;
     border-radius: 8px;
+
+
+  // Customize the look and feel of the scrollbar.
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: inherit; 
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(92,92,92,0.7);
+    border-radius: 8px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $color-lightblue; 
+  }
 
     &.show {
         display: block;
@@ -58,6 +76,9 @@
         top: 140px;
         left: 0;
         width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 64%;
 
         h3 {
             margin-left: 20px;
