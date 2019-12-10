@@ -42,8 +42,10 @@
         list-style: none;
         background: $modal-bg-color;
         width: 32px;
-        height: 32px;
-        border-radius: 16px;
+        height: 35px;
+        border-radius: 20px;
+        padding-left: 6px;
+        padding-top: 3px;
 
         &::before {
             display: none;
@@ -60,7 +62,7 @@
             text-decoration: none;
             color: $color-white;
             border-radius: 16px;
-            padding: 10px 0 0 8px;
+            padding: inherit;
 
             &:hover,
             &:focus {
