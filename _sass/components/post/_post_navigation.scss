@@ -39,11 +39,11 @@
         position: fixed;
         right: 5%;
         bottom: 5%;
+        list-style: none;
+        background: $modal-bg-color;
         width: 32px;
         height: 32px;
         border-radius: 16px;
-        background: $modal-bg-color;
-        list-style: none;
 
         &::before {
             display: none;
@@ -58,10 +58,13 @@
 
         a {
             text-decoration: none;
-            padding: 5px 10px;
+            color: $color-white;
+            border-radius: 16px;
+            padding: 10px 0 0 8px;
 
-            &.next-item {
-                padding-left: 12px;
+            &:hover,
+            &:focus {
+                background: transparent;
             }
         }
     }

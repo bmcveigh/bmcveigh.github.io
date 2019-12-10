@@ -13,12 +13,16 @@
 <ul class="post-navigation-mobile">
     {% if page.next.url %}
         <li class="prev-item">
-            <a class="next" href="{{page.next.url}}">&lt;</a>
+            <a class="next" href="{{page.next.url}}">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </a>
         </li>
     {% endif %}
     {% if page.previous.url %}
         <li class="next-item">
-            <a class="prev" href="{{page.previous.url}}">&gt;</a>
+            <a class="prev" href="{{page.previous.url}}">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
         </li>
     {% endif %}
 </ul>
