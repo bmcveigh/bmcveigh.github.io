@@ -52,6 +52,10 @@
 
         &.prev-item {
             left: 5%;
+
+            // The left arrow is odd because for it to look centered,
+            // the padding needs to be slightly less than the right side.
+            padding-left: 6px;
         }
         &.next-item {
             right: 5%;
