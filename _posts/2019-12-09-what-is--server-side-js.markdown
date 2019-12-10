@@ -29,9 +29,8 @@ which helps manage dependencies for your Node application.
 * **It is used by many front-end JavaScript frameworks and libraries.** One of the main reasons to
   use Node.js is because so many modern JavaScript libraries and frameworks use Node.js. Some of these
   frameworks include ReactJS and Webpack.
-* **It allows for full-stack development.** This means that a front-end developer can more easily work
-  on back-end tasks without having to hire additional developers for the back-end since everything runs
-  in JavaScript.
+* **It makes full-stack development easier.** A front-end developer can more easily work on back-end tasks
+  without having to hire additional developers for the back-end since everything runs in JavaScript.
 
 
 ## How do I get started?
