@@ -1,0 +1,13 @@
+---
+layout: weekly_review
+title:  "2019 Week 50 Review"
+date:   2019-12-13 09:00:00 -0500
+categories: weekly-review
+tags:
+ - Weekly Review
+week_number: 50
+good: 'I got my flu shot on Friday.'
+bad: 'I had a sore throat on Wednesday and Thursday. On Friday, that sore throat also turned into a cough.'
+one_thing_learned: 'If I do not "bundle up" when it is cold outside, I likely am going to get sick like I am now.'
+plans_for_coming_week: 'I plan on being more careful when I am outside so I do not get sick again. I will buy hand sanitizer to help with this as well.'
+---
