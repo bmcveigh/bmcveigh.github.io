@@ -5,6 +5,9 @@
         {% include hero.html %}
 {% endcase %}
 {{ content }}
+{% if page.layout != 'page' %}
+    {% include post_navigation.html %}
+{% endif %}
 {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
 {% endif %}

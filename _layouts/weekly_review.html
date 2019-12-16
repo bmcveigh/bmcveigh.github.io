@@ -49,3 +49,6 @@ layout: default
     either I'm really busy or I've moved to
     <a href="https://mars.nasa.gov/">Mars</a>.
 </p>
+{% if page.layout != 'page' %}
+    {% include post_navigation.html %}
+{% endif %}
