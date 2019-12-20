@@ -1,3 +1,14 @@
 <footer>
-    &copy; {{ site.time | date: '%Y' }} {{ site.title }}
+    {% capture current_year %}
+        {{ site.time | date: '%Y' | strip }}
+    {% endcapture %}
+    {% capture site_creation_year %}
+        {{ site.custom_config.site_creation_year | strip }}
+    {% endcapture %}
+
+    {% if site_creation_year != current_year %}
+        &copy; {{ site.custom_config.site_creation_year }} - {{ current_year }} {{ site.title }}
+    {% else %}
+    &copy; {{ current_year }} {{ site.title }}
+    {% endif %}
 </footer>
