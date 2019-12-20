@@ -9,5 +9,5 @@ week_number: 51
 good: 'I did some Drupal 8 theming and am becoming more familiar with Twig. Also, I am recovering from my cold.'
 bad: 'I had to get my car fixed this week.'
 one_thing_learned: 'I learned that Twig does not seem to handle adding elements to an array the same way as PHP or JavaScript does.'
-plans_for_coming_week: 'I want to try working on a new project. I might play around more with VueJS.'
+plans_for_coming_week: 'I want to try working on a new project. I might play around more with <a href="https://en.m.wikipedia.org/wiki/Vue.js">VueJS</a>.'
 ---
