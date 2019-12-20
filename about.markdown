@@ -19,6 +19,9 @@ My name is Brian McVeigh. I am a Web Developer specializing in Drupal 7/8 and Ja
 
 Please see [Work Experience](/work-experience) page.
 
-## Links
+## Profiles and Accounts
 
-[GitHub Profile](https://github.com/bmcveigh)
+* [GitHub](https://github.com/bmcveigh)
+* [Twitter](https:///twitter.com/bribread22)
+* [Drupal](https://www.drupal.org/u/bribread22)
+* [DEV Community](https://dev.to/bmcveigh)
