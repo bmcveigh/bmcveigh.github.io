@@ -21,12 +21,12 @@ I think this is:
 ### Reason 1: There is a potentially steep learning curve.
 
 Theming on a specific CMS can have a steep learning curve, particularly with Drupal. Why?
-Well, in the case of Drupal, a front-end developer may have to know some PHP, since Drupal
-tends to use what are called [preprocess functions](https://www.drupal.org/docs/8/theming-drupal-8/modifying-attributes-in-a-theme-file). These functions allow you to pass additional data or modify
-existing data into a template. In addition to preprocess functions, the front-end developer developing
-the theme would also need to have an understanding [Twig](https://twig.symfony.com/) and its syntax,
-which has a learning curve, although not nearly as steep as learning Drupal itself, especially if the
-FED is used to PHP templates instead of Twig templates.
+Well, in the case of Drupal, a front-end developer may have to know some
+[PHP](https://en.wikipedia.org/wiki/PHP), since Drupal tends to use what are called
+[preprocess functions](https://www.drupal.org/docs/8/theming-drupal-8/modifying-attributes-in-a-theme-file). These functions allow you to pass additional data or modify existing data into a template. In addition
+to preprocess functions, the front-end developer developing the theme would also need to have an understanding
+of [Twig](https://twig.symfony.com/) and its syntax, which has a learning curve, although not nearly as steep as learning Drupal itself, especially if the FED is used to PHP template files (HTML and PHP in the same file) instead of Twig templates. However, if the FED is familiar with a similar framework, such as
+[Liquid](https://shopify.github.io/liquid/), it shouldn't be too big of a learning curve.
 
 I know other CMS's such as [WordPress](https://wordpress.org/) or [Joomla](https://www.joomla.org/) have their own learning curve as well, but I am not as familiar with those CMS's as far as code goes so I really cannot say anything more about the learning curve. 
 
