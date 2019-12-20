@@ -34,7 +34,8 @@ I know other CMS's such as [WordPress](https://wordpress.org/) or [Joomla](https
 
 Often, front-end developers need to change the existing HTML markup to style an element a certain way.
 For example, the published date may be placed in the wrong location and the FED needs to put it below
-the title (let's say request from the customer). This is easy to do with static HTML, but is not always easy when developing a CMS-specific theme.
+the title (let's say it's a request from the customer). This is easy to do with static HTML, but is not
+always easy when developing a CMS-specific theme.
 
 ### Reason 3: Premium themes frequently look more modern and therefore more take longer to develop.
 
