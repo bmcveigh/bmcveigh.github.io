@@ -9,5 +9,13 @@ week_number: 51
 good: 'I did some Drupal 8 theming and am becoming more familiar with Twig. Also, I am recovering from my cold.'
 bad: 'I had to get my car fixed this week.'
 one_thing_learned: 'I learned that Twig does not seem to handle adding elements to an array the same way as PHP or JavaScript does.'
-plans_for_coming_week: 'I want to try working on a new project. I might play around more with <a href="https://en.m.wikipedia.org/wiki/Vue.js">VueJS</a>.'
+plans_for_coming_week: | 
+    I want to try working on a new project. I might play around more with
+    <a href="https://en.m.wikipedia.org/wiki/Vue.js" target="_blank">VueJS</a>.
+    I also am going to look into getting an AWS certification, but to do that,
+    I need to train myself for it first. I am thinking of checking out
+    <a href="https://linuxacademy.com/" target="_blank">Linux Academy</a>
+    or <a href="https://udemy.com/" target="_blank">Udemy</a> to equip myself
+    with that knowledge. From what I hear, the AWS exam can be pretty challenging,
+    regardless of which one you take.
 ---
