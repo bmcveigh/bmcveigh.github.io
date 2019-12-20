@@ -5,14 +5,9 @@ platform.
 
 ### Installation
 
-#### Without Docker
-
-To install without Docker, you will need Ruby installed. Once installed,
+* **Without Docker.** To install without Docker, you will need Ruby installed. Once installed,
 in the root directory, run `bundle exec jekyll serve`.
-
-#### With Docker
-
-Assuming you have Docker Desktop installed, run `docker-compose up`.
+* **With Docker.** Assuming you have Docker Desktop installed, run `docker-compose up`.
 
 ### Once Installed
 
