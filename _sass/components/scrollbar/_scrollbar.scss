@@ -1,0 +1,21 @@
+//
+// Global styling for the scrollbar to make it fancier.
+//
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: inherit; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: rgba(92,92,92,0.7);
+   border-radius: 8px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $color-lightblue; 
+}
