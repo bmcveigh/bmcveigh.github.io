@@ -14,7 +14,7 @@ tags:
 ---
 Have you ever noticed that CMS-specific paid themes are more expensive than regular
 HTML themes (particularly when browsing a site like [ThemeForest](https://themeforest.net/))?
-Whether you realized it or not, there are some good reasons why I personally
+Regardless of your answer, there are some good reasons why I personally
 think this is speaking from past and current experience. Here are four reasons why
 I think this is:
 
