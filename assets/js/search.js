@@ -100,7 +100,10 @@ new Vue({
             }
 
             for (const post of this.posts) {
-                if (post.title.toLowerCase().indexOf(this.keywords) > -1) {
+                // Search each title as well as tags for improved search results.
+                const searchString = post.title.toLowerCase() + post.tags.toLowerCase();
+
+                if (searchString.indexOf(this.keywords) > -1) {
                     this.filteredPosts.push(post);
                 }
             }
