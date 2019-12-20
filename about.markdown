@@ -22,6 +22,7 @@ Please see [Work Experience](/work-experience) page.
 ## Profiles and Accounts
 
 * [GitHub](https://github.com/bmcveigh)
+* [LinkedIn](https://www.linkedin.com/in/brian-mcveigh-79419586)
 * [Twitter](https:///twitter.com/bribread22)
 * [Drupal](https://www.drupal.org/u/bribread22)
 * [DEV Community](https://dev.to/bmcveigh)
