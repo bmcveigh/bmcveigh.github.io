@@ -1,112 +1,60 @@
+const searchResults = document.querySelector('.search-wrap .search-results ul');
+
 const worker = {
     provideUpDownArrowFunctionality: function(vueInstance) {
-        let text = '';
-
-         // Highlight next item if down arrow key pressed.
-         if (event.which === 40) {
-            // Numeric value to see if there is another row after the selected one.
-            const nextIndex = vueInstance.selectedSearchResIndex + 1;
-
-            if (vueInstance.$refs.searchResult && vueInstance.$refs.searchResult.length) {
-                if (vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex] &&
-                    vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].className === ''
-                ) {
-                    vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].className = 'selected';
-                    text = vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].text;
-                }
-                else if (vueInstance.$refs.searchResult[nextIndex]) {
-                    vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].className = '';
-                    vueInstance.$refs.searchResult[++vueInstance.selectedSearchResIndex].className = 'selected';
-                    text = vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].text;
-                }
-
-               
-            }
-        }
-        // Highlight next item if up arrow key pressed.
-        else if (event.which === 38) {
-            if (vueInstance.$refs.searchResult && vueInstance.$refs.searchResult.length) {
-                const prevIndex = vueInstance.selectedSearchResIndex - 1;
-                
-                if (vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex] && vueInstance.$refs.searchResult[prevIndex]) {
-                    vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].className = '';
-                    vueInstance.$refs.searchResult[--vueInstance.selectedSearchResIndex].className = 'selected';
-                    text = vueInstance.$refs.searchResult[vueInstance.selectedSearchResIndex].text;
-                }
-            }
-        }
-        // If the user selects the Enter key, go to the page they have selected.
-        else if (event.which === 13) {
-            window.location = document.querySelector('.search-results a.selected').href;
-        }
-        // Update the search input field value if a search result option was selected.
-        if (text.length) {
-            vueInstance.keywords = text;
-            vueInstance.$refs.search.value = text;
-        }
-    }
-};
-
-/**
- * Use VueJS to make the search functionality interactive.
- */
-new Vue({
-    el: '#search',
-    data: {
-        showSearch: false,
-        keywords: '',
-        posts: [],
-        filteredPosts: [],
-        selectedSearchResIndex: 0,
+        // todo
     },
-    methods: {
-        handleSearchClick: async function(event) {
-            event.preventDefault();
 
-            if (!this.posts.length) {
-                this.posts = await fetch('/api/posts.json')
-                .then(res => res.json())
-                .then(json => json)
-                .catch(error => {
-                    // catch error.
-                });
-            }
+    handleSearchClick: async function() {
+        const searchWrap = document.querySelector('.search-wrap');
+        searchWrap.classList.toggle('hidden');
 
-            this.showSearch = !this.showSearch;
-            const refs = this.$refs;
+        this.posts = await fetch('/api/posts.json')
+            .then(res => res.json())
+            .then(json => json)
+            .catch(error => {
+                // catch error.
+            });
+    },
 
-            // Set the input field to be auto-focused when user clicks
-            // search button.
-            setTimeout(function() {
-                refs.search.focus();
-            }, 10);
-        },
-        handleKeyDown: function(event) {
-            // If delete key is pressed, set the filtered posts to posts
-            // so other results will still show up.
-            if (event.which === 8) {
-                this.filteredPosts = this.posts;
-            }
+    handleKeyDown: function(event) {
+        // If delete key is pressed, set the filtered posts to posts
+        // so other results will still show up.
+        if (event.which === 8) {
+            this.filteredPosts = this.posts;
+        }
 
-            worker.provideUpDownArrowFunctionality(this);
-        },
-        handleInput: function(event) {
-            this.keywords = event.target.value.toLowerCase();
+        worker.provideUpDownArrowFunctionality(this);
+    },
+    handleInput: function(event) {
+        this.keywords = event.target.value.toLowerCase();
+        this.filteredPosts = [];
+
+        if (!this.keywords.length) {
             this.filteredPosts = [];
+            return;
+        }
 
-            if (!this.keywords.length) {
-                this.filteredPosts = [];
-                return;
+        searchResults.innerHTML = '';
+
+        for (const post of this.posts) {
+            // Search each title as well as tags for improved search results.
+            const searchString = post.title.toLowerCase() + post.tags.toLowerCase();
+
+            if (searchString.indexOf(this.keywords) > -1) {
+                // Create an li element.
+                const li = document.createElement('li');
+                li.classList.add('search-result');
+                
+                // Create a link and append it to the li.
+                const a = document.createElement('a');
+                a.setAttribute('href', post.url);
+                a.innerHTML = post.title;
+                li.appendChild(a);
+
+                // Add the li element with the link.
+                searchResults.appendChild(li);
             }
-
-            for (const post of this.posts) {
-                // Search each title as well as tags for improved search results.
-                const searchString = post.title.toLowerCase() + post.tags.toLowerCase();
-
-                if (searchString.indexOf(this.keywords) > -1) {
-                    this.filteredPosts.push(post);
-                }
-            }
-        },
-    }
-});
+        }
+    },
+};

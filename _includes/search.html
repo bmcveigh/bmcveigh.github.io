@@ -1,43 +1,26 @@
-<span id="search">
-        <a
-        class="search-link"
-        href="#"
-        v-on:click="handleSearchClick"
-    >
+<a
+    class="search-link"
+    href="#"
+    onClick="worker.handleSearchClick()"
+>
+    <i class="fa fa-search"></i>
+</a>
+<div class="search-wrap hidden">
+    <div class="search-field-wrap">
         <i class="fa fa-search"></i>
-    </a>
-    <div class="search-wrap" v-bind:class="{ hidden: !showSearch }">
-        <div class="search-field-wrap">
-            <i class="fa fa-search"></i>
-             <input
-                type="text"
-                placeholder="Enter keywords..."
-                v-on:keydown="handleKeyDown"
-                v-on:input="handleInput"
-                autofocus
-                ref="search"
-            />
-        </div>
-        <div class="search-results">
-            <div v-if="!filteredPosts.length && keywords.length">
-                <h3>No results found.</h3>
-            </div>
-            <div v-else-if="!filteredPosts.length && !keywords.length">
-                <h3>Results will show up here as you type.</h3>
-            </div>
-            <ul v-else>
-                <li class="search-result" 
-                    v-for="post in filteredPosts"
-                    >
-                    <a
-                        v-bind:href="post.url"
-                        v-text="post.title"
-                        ref="searchResult"
-                    >
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <input
+            type="text"
+            placeholder="Enter keywords..."
+            onkeydown="return worker.handleKeyDown(event);"
+            oninput="return worker.handleInput(event);"
+            autofocus
+            ref="search"
+        />
     </div>
-</span>
+    <div class="search-results">
+        <ul>
+            <!-- This will be populated by JS. -->
+        </ul>
+    </div>
+</div>
 <script src="/assets/js/search.js"></script>
