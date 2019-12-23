@@ -11,9 +11,9 @@ tags:
  - GitHub Pages
  - Git
 ---
-Blogging in my opinion is an enjoyable experience; however, there is one thing
+Although blogging in my opinion is an enjoyable experience, there is one thing
 that made blogging kind of difficult to sustain up until now, and that is managing a
-database. Sometimes you want to create content locally or keeping a database can be tricky
+database. Sometimes you want to create content locally and therefore, keeping a database can be tricky
 since you're not supposed to create a database using version control. If you are fairly technical
 and feel a similar pain as I do, I have a solution for you; I recommend using
 [Jekyll](https://jekyllrb.com) and [GitHub Pages](https://pages.github.com). Instead of manually
