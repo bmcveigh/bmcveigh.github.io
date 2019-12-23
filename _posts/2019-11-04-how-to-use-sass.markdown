@@ -67,4 +67,4 @@ From within your theme, run `mkdir sass && touch sass/index.scss` if you do not 
 `gulp`
 
 If gulp is working properly, you should see something like this in your terminal:
-![Gulp is working](/assets/img/gulpSassSuccessMessage.PNG)
+![Gulp is working](/assets/img/2019/gulpSassSuccessMessage.PNG)

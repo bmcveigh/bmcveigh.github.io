@@ -29,7 +29,7 @@ package: Examples
 
 Now that we’ve done that, if you go to `/admin/modules`, you should see the module show up on that page and you can install it. It should look like the screenshot shown below:
 
-![Hello World module page](/assets/img/helloWorldModulePage.PNG)
+![Hello World module page](/assets/img/2019/helloWorldModulePage.PNG)
 
 Great, we’ve added the custom module, so let’s now let’s create a page called "Hello, World!". We will need to create a controller class to do this. In the hello_world module, create a directory called `src/Controller`. Inside the controller directory, create a PHP class called `HelloWorldController.php`. Your controller class should look like this:
 
@@ -69,4 +69,4 @@ hello_world.get:
 
 Now we need to rebuild Drupal cache. If you are using Drush, run the command drush cr to rebuild the Drupal cache. Once that’s done, if you point your browser to `/hello-world`, you should see the text "Hello, world!" appear and voila!
 
-![Hello World display page](/assets/img/helloWorldDisplayPage.PNG)
+![Hello World display page](/assets/img/2019/helloWorldDisplayPage.PNG)

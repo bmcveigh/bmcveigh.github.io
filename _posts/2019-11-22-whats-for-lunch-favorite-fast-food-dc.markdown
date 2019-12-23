@@ -9,7 +9,7 @@ I am hungry and I do not have a lot of time to eat:
 
 ### West Wing Cafe
 
-![West Wing Cafe](/assets/img/westWingCafe.PNG)
+![West Wing Cafe](/assets/img/2019/westWingCafe.PNG)
 
 This restaurant has great sandwiches and breakfast. I like going there in the mornings to get my
 iced coffee and a bagel. They also have good sandwiches, particularly their seasonal "Tasty Turkey"
@@ -26,7 +26,7 @@ done so.
 This is my favorite burger joint. They have a couple of locations in DC, but I highly recommend
 checking out their location by the Wharf pier. It has great scenery.
 
-![Shake Shack Wharf St](/assets/img/shakeShackWharfSt.PNG)
+![Shake Shack Wharf St](/assets/img/2019/shakeShackWharfSt.PNG)
 
 ### Moe's
 

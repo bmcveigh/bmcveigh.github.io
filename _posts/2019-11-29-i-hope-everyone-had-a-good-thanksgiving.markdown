@@ -19,11 +19,11 @@ Chocolate Chess Pie. In my opinion,
 and probably yours too (assuming you like chocolate like I do), it was delicious. This was the
 first time I have ever had this kind of pie. Here's a picture of what it looks like:
 
-![Chocolate Chess Pie](/assets/img/chocolateChessPie.png)
+![Chocolate Chess Pie](/assets/img/2019/chocolateChessPie.png)
 
 I also had empanadas; they were really good too. Here's a picture of what they look like:
 
-![Empanadas](/assets/img/empanadas.png)
+![Empanadas](/assets/img/2019/empanadas.png)
 
 I enjoy discovering new foods for the first time. Overall, I had nice Thanksgiving and I hope
 you did too.

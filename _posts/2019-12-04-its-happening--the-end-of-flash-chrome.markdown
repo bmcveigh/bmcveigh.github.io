@@ -8,7 +8,7 @@ tags:
  - Google
  - Chrome
 ---
-![Chrome Flash EOL](/assets/img/chromeFlashNoLongerSupported.PNG)
+![Chrome Flash EOL](/assets/img/2019/chromeFlashNoLongerSupported.PNG)
 
 I could see this coming after all of the vulnerabilities that were discovered with Flash.
 Sometime in December 2020, Chrome will no longer support Flash. This could cause major disruption
