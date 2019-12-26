@@ -36,6 +36,7 @@
             border: $modal-input-border;
             margin: 2%;
             padding-left: 35px;
+            width: inherit;
 
             &::placeholder {
                 color: $modal-input-placeholder-text-color;
