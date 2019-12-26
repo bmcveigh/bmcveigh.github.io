@@ -3,6 +3,7 @@
  */
 
 const searchResults = document.querySelector('.search-wrap .search-results ul');
+const keysTextField = document.querySelector('.search-wrap input[type="text"]');
 
 const worker = {
     provideUpDownArrowFunctionality: function() {
@@ -107,33 +108,49 @@ const worker = {
     },
     handleInput: function(event) {
         this.keywords = event.target.value.toLowerCase();
-        this.filteredPosts = [];
-
-        if (!this.keywords.length) {
-            this.filteredPosts = [];
-            return;
-        }
-
         searchResults.innerHTML = '';
 
-        for (const post of this.posts) {
-            // Search each title as well as tags for improved search results.
-            const searchString = post.title.toLowerCase() + post.tags.toLowerCase();
-
-            if (searchString.indexOf(this.keywords) > -1) {
-                // Create an li element.
-                const li = document.createElement('li');
-                li.classList.add('search-result');
-                
-                // Create a link and append it to the li.
-                const a = document.createElement('a');
-                a.setAttribute('href', post.url);
-                a.innerHTML = post.title;
-                li.appendChild(a);
-
-                // Add the li element with the link.
-                searchResults.appendChild(li);
+        if (this.keywords.length) {
+            for (const post of this.posts) {
+                // Search each title as well as tags for improved search results.
+                const searchString = post.title.toLowerCase() + post.tags.toLowerCase();
+    
+                if (searchString.indexOf(this.keywords) > -1) {
+                    // Create an li element.
+                    const li = document.createElement('li');
+                    li.classList.add('search-result');
+                    
+                    // Create a link and append it to the li.
+                    const a = document.createElement('a');
+                    a.setAttribute('href', post.url);
+                    a.innerHTML = post.title;
+                    li.appendChild(a);
+    
+                    // Add the li element with the link.
+                    searchResults.appendChild(li);
+                }
             }
+        }
+
+        if (!searchResults.querySelector('li')) {
+            const li = document.createElement('li');
+            li.classList.add('info');
+
+            // Figure out what message to display.
+            switch (true) {
+                // If user entered keywords but nothing was found,
+                // display "No results found".
+                case keysTextField && keysTextField.value.length > 0:
+                    li.innerHTML = 'No results found.';
+                    break;
+
+                // User entered in no keywords, so let user know that
+                // results will show up as they type.
+                default:
+                    li.innerHTML = 'Results will show up here as you type.';
+                    break;
+            }
+            searchResults.appendChild(li);
         }
     },
 };
