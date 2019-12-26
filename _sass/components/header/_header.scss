@@ -50,6 +50,10 @@
     
 }
 
+.search-icon-mobile-wrap {
+    display: none;
+}
+
 .main-menu-list-mobile {
     display: none;
 }
@@ -70,6 +74,13 @@
                 border-bottom: 1px solid $color-white;
                 height: 7px;
             }
+        }
+
+        .search-icon-mobile-wrap {
+            display: block;
+            position: absolute;
+            right: 92px;
+            top: 26px;
         }
 
         .main-menu-list {
