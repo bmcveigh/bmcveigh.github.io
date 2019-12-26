@@ -45,6 +45,12 @@
                 border: $modal-input-focus-border;
                 outline: none;
             }
+
+            @media screen and (max-width: 800px) {
+                margin: 0;
+                width: 80%;
+                border-radius: 0;
+            }
         }
 
     }
@@ -79,6 +85,10 @@
                 height: 43px;
                 padding-top: 10px;
                 margin-left: 0;
+
+                @media screen and (max-width: 800px) {
+                    height: 53px;
+                }
 
                 a {
                     position: absolute;
