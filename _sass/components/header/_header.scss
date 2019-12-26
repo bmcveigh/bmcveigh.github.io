@@ -81,9 +81,11 @@
             position: absolute;
             right: 92px;
             top: 26px;
+            z-index: 110;
         }
 
-        .main-menu-list {
+        .main-menu-list li:not(:last-child),
+        .main-menu-list .search-link {
             display: none;
         }
     }
