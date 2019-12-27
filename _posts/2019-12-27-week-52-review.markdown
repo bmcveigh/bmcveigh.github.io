@@ -1,0 +1,17 @@
+---
+layout: weekly_review
+title:  "2019 Week 52 Review"
+date:   2019-12-27 11:20:00 -0500
+categories: weekly-review
+tags:
+ - Weekly Review
+week_number: 52
+good: 'I had a really good Christmas break with my family. Also, I have completely recovered from my cold.'
+bad: 'I am happy to report that nothing bad happened this week. It was much more positive than last week.'
+one_thing_learned: 'I learned more about Vanilla JavaScript.'
+plans_for_coming_week: | 
+    I plan on playing around with
+    <a href="https://www.drupal.org/project/social" target="_blank">Open Social</a>,
+    which is an open source Drupal distribution. Also, I might work on something using
+    <a href="https://laravel.com/" target="_blank">Laravel</a> as well.
+---
