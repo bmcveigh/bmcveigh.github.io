@@ -4,6 +4,9 @@
     {% when 'post' %}
         {% include hero.html %}
 {% endcase %}
+{% if page.youtube_video %}
+    {% include youtube_video.html %}
+{% endif %}
 {{ content }}
 {% if page.layout != 'page' %}
     {% include post_navigation.html %}
