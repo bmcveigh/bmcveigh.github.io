@@ -1,7 +1,7 @@
 ---
 layout: weekly_review
 title:  "2020 Week 1 Review"
-date:   2019-01-03 06:37:00 -0500
+date:   2020-01-03 06:37:00 -0500
 categories: weekly-review
 tags:
  - Weekly Review
