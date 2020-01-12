@@ -11,24 +11,31 @@ tags:
 Below is a reference of what I think are the most useful git commands which I frequently use:
 
 `git init`
+
 Initializes a new git repository.
 
 `git add <file_path_to_add>`
+
 Stage a file or directory to be committed. This command I use on a daily basis.
 
-`git commit -m “Your commit message.”`
+`git commit -m "Your commit message."`
+
 Commit files that are staged.
 
 `git status`
+
 This one is probably the most frequently used git command. This command shows you a list of local file changes since the last commit. If a file is untracked or has been modified and has not been staged, it will display as red text. Otherwise, it will display as green text.
 
 `git log`
+
 Show a list of commits for the branch (or commit) checked out. Git refers to this as HEAD.
 
 `git clone <remote_repository_url>`
+
 This allows you to essentially download a Git repository from a remote server, such as GitHub.
 
 `git checkout <resource>`
+
 This command can do a few different things. It can do any of the following:
 * Checkout a branch.
   Example: git checkout master
@@ -39,15 +46,19 @@ This command can do a few different things. It can do any of the following:
   Example: git checkout /src/helloworld.js
 
 `git commit --amend`
+
 Modify an existing commit message.
 
 `git stash save`
+
 Stash all untracked changes so they can be reapplied later.
 
 ### Commands with potential side effects if you’re not careful
 
 `git reset --hard`
+
 This one you have to think twice about using. Basically, what it will do is revert all of your uncommitted changes.
 
 `git checkout <commit_hash>; git push origin --force HEAD:master`
+
 This command is what is called a “force push”, meaning it will allow you to undo commits to a specific branch. In the example command above, this takes the commit checked out and resets master to this commit.
