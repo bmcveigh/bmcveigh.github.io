@@ -1,0 +1,13 @@
+---
+layout: weekly_review
+title:  2020 Week 30 Review
+date:   2020-07-26 12:29:00 -0500
+categories: weekly-review
+tags:
+ - Weekly Review
+week_number: 30
+good: 'I got to spend a lot of time with my dog and my wife.'
+bad: 'COVID-19 is really bad and just keeps getting worse. As of this post date, there have been 16,100,900 reported cases.'
+one_thing_learned: 'I can’t think of anything off the top of my head.'
+plans_for_coming_week: 'I plan on remaining cautious when outside my house while still trying to have fun, staying home, and staying safe.'
+---
